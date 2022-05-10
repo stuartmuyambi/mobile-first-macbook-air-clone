@@ -1,1 +1,25 @@
-styles.
+body {
+	background-color: #000;
+}
+
+nav {
+	border-bottom: 1px solid #414145;
+	color: #cbcbcb;
+}
+
+nav ul {
+	margin: 14px 0;
+	padding: 0 20px;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li a{
+	color: #cbcbcb;
+}
+
+.nav-icons {
+	width: 19px;
+	height: 19px;
+}
