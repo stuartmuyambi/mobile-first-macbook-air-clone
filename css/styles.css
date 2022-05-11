@@ -57,7 +57,7 @@ nav ul {
 nav ul li a {
     color: #cbcbcb;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .nav-links {
@@ -75,7 +75,7 @@ nav ul li a {
 
 .nav-banner-1 {
     height: 3rem;
-    padding: 0 1.4rem;
+    padding: 0 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +84,7 @@ nav ul li a {
 }
 
 .nav-banner-1 p {
-    margin: 0;
+    margin: 0 auto 0 0;
     color: #eaeaea;
     font-family: "inter-medium";
     font-size: 14px;
@@ -93,12 +93,17 @@ nav ul li a {
 .nav-btn {
     border: none;
     font-family: "inter-regular";
-    padding: 4px 14px;
+    padding: 5px 13px;
+    margin-left: 10px;
     border-radius: 20px;
     background-color: #0070e3;
     color: #fff;
     font-size: 12px;
     text-transform: capitalize;
+}
+
+.banner-links {
+    display: none;
 }
 
 .feature-image {
@@ -172,13 +177,14 @@ section {
     }
 
     .nav-banner-1 {
-    padding: 0 2.6rem;
-}
+        padding: 0 3rem;
+    }
 
-.nav-banner-1 p {
-    font-family: "inter-bold";
-    font-size: 15px;
-}
+    .nav-banner-1 p {
+        font-family: "inter-medium";
+        font-size: 15px;
+    }
+
 }
 
 /*medium devices*/
@@ -196,6 +202,19 @@ section {
         display: block;
     }
 
+    .banner-links {
+        display: block;
+        color: #cbcbcb;
+        text-decoration: none;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .nav-banner-1 p {
+        font-size: 18px;
+    }
+
+
 }
 
 /*large devices*/
@@ -207,6 +226,11 @@ section {
     nav ul li a:hover {
         color: #fff;
     }
+
+    .nav-banner-1 {
+        padding: 0 5.5rem;
+    }
+
 }
 
 /*extra large devices*/
@@ -214,6 +238,12 @@ section {
     nav {
         padding: 0 11rem;
     }
+
+    .nav-banner-1 {
+        padding: 0 11rem;
+    }
+
+
 }
 
 /*big screens*/
