@@ -40,9 +40,18 @@ body {
     background: #aaa;
 }
 
+.link {
+    text-decoration: none;
+    color: #2997ff;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 /*navigation and header styles*/
 nav {
-    margin: 10px 0;
+    margin: 12.8px 0;
     padding: 0 1.6rem;
     color: #cbcbcb;
 }
@@ -80,7 +89,17 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     background-color: #141416;
-    border-bottom: 1px solid #3c3c3c;
+}
+
+.nav-banner-2 {
+    /*height: 3rem;*/
+    padding: 0.6rem 1.6rem;
+    border-top: 1px solid #3c3c3c;
+    background-color: #141416;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;*/
 }
 
 .nav-banner-1 p {
@@ -88,6 +107,15 @@ nav ul li a {
     color: #eaeaea;
     font-family: "inter-medium";
     font-size: 14px;
+}
+
+.nav-banner-2 p {
+    text-align: center;
+    font-family: "inter-regular";
+    color: #eaeaea;
+    font-size: 12px;
+    margin: 0;
+    line-height: 18px;
 }
 
 .nav-btn {
@@ -100,6 +128,11 @@ nav ul li a {
     color: #fff;
     font-size: 12px;
     text-transform: capitalize;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    background-color: #0050a2;
 }
 
 .banner-links {
@@ -185,6 +218,17 @@ section {
         font-size: 15px;
     }
 
+    .nav-banner-2 {
+        height: 3rem;
+        padding: 0 1.6rem;
+        border-top: 1px solid #3c3c3c;
+        background-color: #141416;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }
 
 /*medium devices*/
@@ -214,7 +258,9 @@ section {
         font-size: 18px;
     }
 
-
+    .nav-banner-2 p {
+        font-size: 13px;
+    }
 }
 
 /*large devices*/
@@ -229,6 +275,10 @@ section {
 
     .nav-banner-1 {
         padding: 0 5.5rem;
+    }
+
+    .nav-banner-2 p {
+        font-size: 14px;
     }
 
 }
