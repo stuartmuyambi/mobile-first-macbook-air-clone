@@ -1,7 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 /*import custom fonts*/
 @font-face {
     font-family: 'inter-regular';
     src: url("../fonts/Inter-Regular-slnt=0.ttf");
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url("../fonts/Inter-Medium-slnt=0.ttf");
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url("../fonts/Inter-Bold-slnt=0.ttf");
 }
 
 @font-face {
@@ -29,7 +43,7 @@ body {
 /*navigation and header styles*/
 nav {
     margin: 10px 0;
-    padding: 0 1.7rem;
+    padding: 0 1.5rem;
     color: #cbcbcb;
 }
 
@@ -59,18 +73,32 @@ nav ul li a {
     color: #fff;
 }
 
-.nav-banner {
+.nav-banner-1 {
+    height: 3rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #141416;
-    padding: 15px 20px;
     border-bottom: 1px solid #3c3c3c;
 }
 
-.nav-banner p {
+.nav-banner-1 p {
     margin: 0;
     color: #eaeaea;
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: 0.04rem;
+    font-family: "inter-medium";
+    font-size: 14px;
+}
+
+.nav-btn {
+    border: none;
+    font-family: "inter-regular";
+    padding: 4px 14px;
+    border-radius: 20px;
+    background-color: #0070e3;
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
 }
 
 .feature-image {
