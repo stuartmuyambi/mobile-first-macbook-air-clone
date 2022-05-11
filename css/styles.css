@@ -1,7 +1,7 @@
-/*import SF PRO fonts*/
+/*import custom fonts*/
 @font-face {
-    font-family: 'sf-regular';
-    src: url("../fonts/SFPRODISPLAYREGULAR.OTF");
+    font-family: 'inter-regular';
+    src: url("../fonts/Inter-Regular-slnt=0.ttf");
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 
 /*main styles*/
 body {
-    font-family: 'sf-regular';
+    font-family: "Inter-Regular";
     background-color: #000000;
 }
 
@@ -29,7 +29,7 @@ body {
 /*navigation and header styles*/
 nav {
     margin: 10px 0;
-    padding: 0 1.25rem;
+    padding: 0 2rem;
     color: #cbcbcb;
 }
 
@@ -43,7 +43,7 @@ nav ul {
 nav ul li a {
     color: #cbcbcb;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .nav-links {
@@ -91,6 +91,7 @@ section {
     color: #f5f5f6;
     font-size: 20px;
     margin: 0;
+    font-family: "sf-medium";
 }
 
 .main-header-text h3 {
@@ -137,7 +138,11 @@ section {
 /*media queries*/
 
 /*small devices*/
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+    nav {
+        padding: 0 3rem;
+    }
+}
 
 /*medium devices*/
 @media (min-width: 768px) {
@@ -147,11 +152,11 @@ section {
 
     nav {
         margin: 10px 0;
-        padding: 0 2.5rem;
+        padding: 0 2.8rem;
     }
 
     .nav-links {
-    	display: block;
+        display: block;
     }
 
 }
