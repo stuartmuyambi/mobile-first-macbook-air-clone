@@ -16,21 +16,22 @@
 
 /*main styles*/
 body {
-    background-color: #000;
-    font-family: 'sf-regular';
+	font-family: 'sf-regular';
+    background-color: #000000;
 }
 
 /*navigation and header styles*/
 nav {
+    margin: 0.8rem 0;
+    padding: 0 1.25rem;
     color: #cbcbcb;
 }
 
 nav ul {
-    margin: 14px 0;
-    padding: 0 20px;
-    list-style: none;
+	list-style: none;
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 nav ul li a {
