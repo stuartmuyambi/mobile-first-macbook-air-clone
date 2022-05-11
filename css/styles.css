@@ -43,7 +43,7 @@ body {
 /*navigation and header styles*/
 nav {
     margin: 10px 0;
-    padding: 0 1.5rem;
+    padding: 0 1.6rem;
     color: #cbcbcb;
 }
 
@@ -75,7 +75,7 @@ nav ul li a {
 
 .nav-banner-1 {
     height: 3rem;
-    padding: 0 1.5rem;
+    padding: 0 1.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,6 +170,15 @@ section {
     nav {
         padding: 0 3rem;
     }
+
+    .nav-banner-1 {
+    padding: 0 2.6rem;
+}
+
+.nav-banner-1 p {
+    font-family: "inter-bold";
+    font-size: 15px;
+}
 }
 
 /*medium devices*/
