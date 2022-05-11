@@ -16,14 +16,14 @@
 
 /*main styles*/
 body {
-	font-family: 'sf-regular';
+    font-family: 'sf-regular';
     background-color: #000000;
 }
 
 /*text selection color and background*/
 ::selection {
-	color: #060606;
-	background: #aaa;
+    color: #060606;
+    background: #aaa;
 }
 
 /*navigation and header styles*/
@@ -34,7 +34,7 @@ nav {
 }
 
 nav ul {
-	list-style: none;
+    list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 .apple-icon:hover {
-	color: #fff;
+    color: #fff;
 }
 
 .nav-banner {
