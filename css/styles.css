@@ -42,6 +42,12 @@ nav ul {
 
 nav ul li a {
     color: #cbcbcb;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav-links {
+    display: none;
 }
 
 .nav-icons {
@@ -141,13 +147,13 @@ section {
 
     nav {
         margin: 10px 0;
-        padding: 0 3.5rem;
+        padding: 0 2.5rem;
     }
 
-    .nav-icons {
-        width: 16px;
-        height: 16px;
+    .nav-links {
+    	display: block;
     }
+
 }
 
 /*large devices*/
