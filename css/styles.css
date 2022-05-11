@@ -125,3 +125,32 @@ section {
 .full {
     width: 100%;
 }
+
+
+
+/*media queries*/
+
+/*small devices*/
+@media (min-width: 640px) {
+
+}
+
+/*medium devices*/
+@media (min-width: 768px) {
+
+}
+
+/*large devices*/
+@media (min-width: 1024px) {
+
+}
+
+/*extra large devices*/
+@media (min-width: 1280px) {
+
+}
+
+/*big screens*/
+@media (min-width: 1536px) {
+	
+}
