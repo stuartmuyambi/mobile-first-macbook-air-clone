@@ -51,7 +51,7 @@ body {
 
 /*navigation and header styles*/
 nav {
-    margin: 12.8px 0;
+    margin: 0.8rem 0;
     padding: 0 1.6rem;
     color: #cbcbcb;
 }
@@ -66,7 +66,7 @@ nav ul {
 nav ul li a {
     color: #cbcbcb;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 0.688rem;
 }
 
 .nav-links {
@@ -74,8 +74,8 @@ nav ul li a {
 }
 
 .nav-icons {
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
 }
 
 .apple-icon:hover {
@@ -101,27 +101,27 @@ nav ul li a {
     margin: 0 auto 0 0;
     color: #eaeaea;
     font-family: "inter-medium";
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .nav-banner-2 p {
     text-align: center;
     font-family: "inter-regular";
     color: #eaeaea;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 0;
-    line-height: 18px;
+    line-height: 1.5em;
 }
 
 .nav-btn {
     border: none;
     font-family: "inter-regular";
-    padding: 5px 13px;
-    margin-left: 10px;
-    border-radius: 20px;
+    padding: 0.313rem 0.813rem;
+    margin-left: 0.625rem;
+    border-radius: 1.25rem;
     background-color: #0070e3;
     color: #fff;
-    font-size: 11px;
+    font-size: 0.688rem;
     text-transform: capitalize;
 }
 
@@ -139,12 +139,12 @@ nav ul li a {
 /*feature content*/
 
 .feature-image {
-    margin: 45px 0 15px 0;
+    margin: 2.813rem 0 0 0;
     width: 100%;
 }
 
 section {
-    margin: 0 17px;
+    margin: 0 1.063rem;
 }
 
 .main-header-text {
@@ -153,14 +153,14 @@ section {
 
 .main-header-text h2 {
     color: #f5f5f6;
-    font-size: 20px;
+    font-size: 1.125rem;
     margin: 0;
     font-family: "sf-medium";
 }
 
 .main-header-text h3 {
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 1.75rem;
+    margin: 0.625rem 0;
     font-family: "sf-bold";
     background: -webkit-radial-gradient(circle, #d8d9e6, #2e2e31);
     -webkit-background-clip: text;
@@ -171,18 +171,18 @@ section {
     text-align: center;
     font-family: 'inter-medium';
     color: #a1a1a6;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 0.875rem;
+    line-height: 1.563rem;
 }
 
 .m1-section p {
     color: #a1a1a6;
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 0.938rem;
+    line-height: 1.5rem;
 }
 
 .m1-small {
-    width: 70px;
+    width: 5.625rem;
 }
 
 .m1-section {
@@ -195,7 +195,7 @@ section {
 
 .m1-section h3 {
     color: #fff;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .full {
@@ -203,7 +203,7 @@ section {
 }
 
 #event-link {
-    color: #fff;
+    color: #ddd;
 }
 
 #event-link a {
@@ -214,8 +214,6 @@ section {
 #event-link a:hover {
     text-decoration: underline;
 }
-
-
 
 /*media queries*/
 
@@ -231,7 +229,7 @@ section {
 
     .nav-banner-1 p {
         font-family: "inter-medium";
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .nav-banner-2 {
@@ -245,17 +243,33 @@ section {
         align-items: center;
     }
 
+    .main-header-text h2 {
+        font-size: 1.25rem;
+    }
+
     .main-header-text {
         margin: auto 6rem;
     }
 
     .main-header-text p {
-        font-size: 15px;
-        line-height: 28px;
+        font-size: 0.938rem;
+        line-height: 1.75rem;
     }
 
     .main-header-text h3 {
-        font-size: 46px;
+        font-size: 2.875rem;
+    }
+
+    .m1-small-section {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .m1-small {
+        width: 3.75rem;
+        height: 3.75rem;
     }
 
 }
@@ -267,7 +281,7 @@ section {
     }
 
     nav {
-        margin: 10px 0;
+        margin: 0.625rem 0;
         padding: 0 3rem;
     }
 
@@ -279,26 +293,24 @@ section {
         display: block;
         color: #cbcbcb;
         text-decoration: none;
-        font-size: 11px;
-        padding: 0 10px;
+        font-size: 0.688rem;
+        padding: 0 0.625rem;
     }
 
     .feature-image {
-        margin: 50px 0 15px 0;
+        margin: 5rem 0 0 0;
     }
-
-
 
     .active {
         color: #969697;
     }
 
     .nav-banner-1 p {
-        font-size: 18px;
+        font-size: 1.12rem;
     }
 
     .nav-banner-2 p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .main-header-text {
@@ -306,16 +318,21 @@ section {
     }
 
     .main-header-text p {
-        font-size: 20px;
-        line-height: 31px;
+        font-size: 1.25rem;
+        line-height: 1.938rem;
     }
 
     .main-header-text h3 {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 
     .main-header-text h2 {
-        font-size: 25px;
+        font-size: 1.563rem;
+    }
+
+    .m1-small {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
@@ -326,7 +343,7 @@ section {
     }
 
     nav ul li a {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     nav ul li a:hover {
@@ -334,12 +351,12 @@ section {
     }
 
     .nav-btn {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .banner-links {
 
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .nav-banner-1 {
@@ -347,7 +364,7 @@ section {
     }
 
     .nav-banner-2 p {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .main-header-text {
@@ -355,16 +372,21 @@ section {
     }
 
     .main-header-text p {
-        font-size: 20px;
-        line-height: 31px;
+        font-size: 1.313rem;
+        line-height: 1.938rem;
     }
 
     .main-header-text h3 {
-        font-size: 70px;
+        font-size: 4.375rem;
     }
 
     .main-header-text h2 {
-        font-size: 30px;
+        font-size: 1.875rem;
+    }
+
+    .m1-small {
+        width: 5.625rem;
+        height: 5.625rem;
     }
 
 }
@@ -384,20 +406,23 @@ section {
     }
 
     .main-header-text p {
-        font-size: 26px;
-        line-height: 37px;
-    }
-
-    .main-header-text h3 {
-        font-size: 84px;
+        font-size: 1.563rem;
+        line-height: 2.313rem;
     }
 
     .main-header-text h2 {
-        font-size: 31px;
+        font-size: 1.938rem;
     }
 
-
+    .m1-small {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
 }
 
 /*big screens*/
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+    .main-header-text h3 {
+        font-size: 5rem;
+    }
+}
