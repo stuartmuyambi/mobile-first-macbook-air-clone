@@ -22,7 +22,7 @@ body {
 
 /*navigation and header styles*/
 nav {
-    margin: 0.8rem 0;
+    margin: 10px 0;
     padding: 0 1.25rem;
     color: #cbcbcb;
 }
@@ -39,8 +39,8 @@ nav ul li a {
 }
 
 .nav-icons {
-    width: 19px;
-    height: 19px;
+    width: 15px;
+    height: 15px;
 }
 
 .nav-banner {
