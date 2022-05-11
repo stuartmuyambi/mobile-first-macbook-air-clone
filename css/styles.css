@@ -20,6 +20,12 @@ body {
     background-color: #000000;
 }
 
+/*text selection color and background*/
+::selection {
+	color: #060606;
+	background: #aaa;
+}
+
 /*navigation and header styles*/
 nav {
     margin: 10px 0;
