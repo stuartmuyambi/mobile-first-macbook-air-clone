@@ -29,7 +29,7 @@ body {
 /*navigation and header styles*/
 nav {
     margin: 10px 0;
-    padding: 0 2rem;
+    padding: 0 1.7rem;
     color: #cbcbcb;
 }
 
@@ -152,7 +152,7 @@ section {
 
     nav {
         margin: 10px 0;
-        padding: 0 2.8rem;
+        padding: 0 3rem;
     }
 
     .nav-links {
@@ -162,10 +162,22 @@ section {
 }
 
 /*large devices*/
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    nav {
+        padding: 0 5.5rem;
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+    }
+}
 
 /*extra large devices*/
-@media (min-width: 1280px) {}
+@media (min-width: 1280px) {
+    nav {
+        padding: 0 11rem;
+    }
+}
 
 /*big screens*/
 @media (min-width: 1536px) {}
