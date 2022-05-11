@@ -43,6 +43,10 @@ nav ul li a {
     height: 15px;
 }
 
+.apple-icon:hover {
+	color: #fff;
+}
+
 .nav-banner {
     background-color: #141416;
     padding: 15px 20px;
