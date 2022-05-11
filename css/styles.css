@@ -139,8 +139,12 @@ nav ul li a {
     display: none;
 }
 
+/*end of header styles*/
+
+/*feature content*/
+
 .feature-image {
-    margin: 45px 0 20px 0;
+    margin: 45px 0 15px 0;
     width: 100%;
 }
 
