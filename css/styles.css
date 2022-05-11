@@ -131,26 +131,30 @@ section {
 /*media queries*/
 
 /*small devices*/
-@media (min-width: 640px) {
-
-}
+@media (min-width: 640px) {}
 
 /*medium devices*/
 @media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 
+    nav {
+        margin: 10px 0;
+        padding: 0 3.5rem;
+    }
+
+    .nav-icons {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 /*large devices*/
-@media (min-width: 1024px) {
-
-}
+@media (min-width: 1024px) {}
 
 /*extra large devices*/
-@media (min-width: 1280px) {
-
-}
+@media (min-width: 1280px) {}
 
 /*big screens*/
-@media (min-width: 1536px) {
-	
-}
+@media (min-width: 1536px) {}
