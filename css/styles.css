@@ -401,12 +401,16 @@ section {
         padding: 0 11rem;
     }
 
+    .main-header-text h3 {
+        font-size: 5.5rem;
+    }
+
     .main-header-text {
-        margin: auto 16.5rem;
+        margin: auto 15rem;
     }
 
     .main-header-text p {
-        font-size: 1.563rem;
+        font-size: 1.6rem;
         line-height: 2.313rem;
     }
 
@@ -422,7 +426,7 @@ section {
 
 /*big screens*/
 @media (min-width: 1536px) {
-    .main-header-text h3 {
-        font-size: 5rem;
-    }
+    /*.main-header-text h3 {
+        font-size: rem;
+    }*/
 }
