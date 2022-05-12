@@ -494,18 +494,26 @@ section {
         padding: 2.5rem 1.5rem;
         display: grid;
         grid-template-columns: 60% 40%;
+        align-items: center;
         margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .gpu-small {
+        position: absolute;
+        top: 20px;
+        left: 25px;
     }
 
     .gpu-section-left h2 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         margin-top: 2rem;
         line-height: 1.25em;
         text-align: left;
     }
 
     .gpu-section-left h3 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         margin: 0;
         line-height: 1.25em;
         text-align: left;
@@ -622,6 +630,7 @@ section {
         padding: 2rem 0 4rem 0;
         border-radius: 1rem;
         margin-top: 0;
+        position: relative;
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -644,9 +653,11 @@ section {
         line-height: 1.5rem;
     }
 
-    .cpu-section small,
-    .gpu-small {
+    .cpu-section small {
         font-size: 1.1rem;
+        position: absolute;
+        top: 40px;
+        left: 30px;
     }
 
     .cpu-image {
@@ -665,24 +676,28 @@ section {
     }
 
     .gpu-section {
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        background-position: center;
+        height: 20rem;
     }
 
     .gpu-section-left h2 {
         font-size: 2.5rem;
+        /*margin: 0;*/
     }
 
     .gpu-section-left h3 {
         font-size: 2.5rem;
-    }
-
-    .gpu-section-left {
-        margin-bottom: 2rem;
+        /*margin: 0;*/
     }
 
     .gpu-small {
-        font-family: 'inter-medium';
+        font-family: 'inter-bold';
         font-size: 1.1rem;
+        position: absolute;
+        top: 40px;
+        left: 30px;
     }
 
     .gpu-section-right small {
@@ -691,7 +706,7 @@ section {
     }
 
     .gpu-section-right p {
-        margin: 0;
+        /*margin: 0;*/
         font-size: 6rem;
     }
 
@@ -820,14 +835,22 @@ section {
         .gpu-section {
             height: 30rem;
             align-items: center;
+            position: relative;
+            margin: 2rem;
         }
 
         .gpu-section-left h2 {
-            font-size: 3.9rem;
+            font-size: 3.4rem;
         }
 
         .gpu-section-left h3 {
-            font-size: 3.9rem;
+            font-size: 3.4rem;
+        }
+
+        .gpu-section-left small {
+            position: absolute;
+            top: 40px;
+            left: 25px;
         }
 
         .gpu-section-left {
@@ -846,7 +869,7 @@ section {
 
         .gpu-section-right p {
             margin: 0;
-            font-size: 8rem;
+            font-size: 6rem;
         }
 
     }
@@ -974,7 +997,7 @@ section {
 
         .gpu-small {
             font-family: 'inter-medium';
-            font-size: 1.2rem;
+            font-size: 1.3rem;
         }
 
         .gpu-section-right small {
