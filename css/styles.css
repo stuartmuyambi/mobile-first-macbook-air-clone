@@ -189,6 +189,7 @@ section {
 .m1-section {
     margin-top: 4.5rem;
     margin-left: 2rem;
+    position: relative;
 }
 
 .m1-section h2 {
@@ -231,6 +232,10 @@ section {
 
 #event-link a:hover {
     text-decoration: underline;
+}
+
+.m1-chip-big {
+    width: 100%;
 }
 
 /*media queries*/
@@ -314,6 +319,10 @@ section {
         margin: 0;
         font-size: 2.875rem;
     }
+
+    .m1-image {
+    margin-top: -3.125rem;
+}
 
 }
 
@@ -472,6 +481,10 @@ section {
         font-size: 4.3rem;
     }
 
+    .m1-image {
+    margin-top: -5.5rem;
+}
+
 }
 
 /*extra large devices*/
@@ -489,12 +502,12 @@ section {
     }
 
     .main-header-text {
-        margin: auto 15rem;
+        margin: auto 13rem;
     }
 
     .main-header-text p,
     .m1-section p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         line-height: 2.313rem;
     }
 
@@ -525,6 +538,10 @@ section {
         margin: 0;
         font-size: 4.375rem;
     }
+
+    .m1-image {
+    margin-top: -6.5rem;
+}
 }
 
 /*big screens*/
