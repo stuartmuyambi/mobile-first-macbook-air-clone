@@ -238,6 +238,70 @@ section {
     width: 100%;
 }
 
+.cpu-section {
+    background: #3d4881;
+    background: -webkit-linear-gradient(to top, #1b4189, #7c309d);
+    background: linear-gradient(to top, #1b4189, #7c309d);
+    padding: 2rem 0 2rem 0;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cpu-section h2 {
+    color: #c38bfb;
+    font-family: 'inter-bold';
+    font-size: 2rem;
+    line-height: 1.25em;
+    margin-bottom: 0;
+}
+
+.cpu-section h3 {
+    color: #ffffff;
+    font-family: "inter-bold";
+    font-size: 2rem;
+    line-height: 1.25em;
+    margin: 0;
+}
+
+.cpu-section p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-family: 'inter-medium';
+}
+
+.cpu-section small {
+    color: #fff;
+    font-size: 0.9rem;
+    font-family: 'inter-medium';
+}
+
+.cpu-image img {
+    padding-left: 3rem;
+    width: 100%;
+}
+
+.cpu-text {
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+
+.cpu-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.cpu-btn:hover {
+    cursor: pointer;
+}
+
 /*media queries*/
 
 /*small devices*/
@@ -321,8 +385,53 @@ section {
     }
 
     .m1-image {
-    margin-top: -3.125rem;
-}
+        margin-top: -3.125rem;
+    }
+
+    .cpu-section {
+        padding: 4rem 0 4rem 0;
+        border-radius: 1rem;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cpu-section h2 {
+        font-size: 3rem;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        margin-top: 1.9rem;
+    }
+
+    .cpu-section h3 {
+        font-size: 3rem;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    .cpu-section p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .cpu-section small {
+        font-size: 1.5rem;
+    }
+
+    .cpu-image img {
+        padding-left: 3rem;
+        width: 100%;
+    }
+
+    .cpu-text {
+        padding: 0 1rem;
+        margin-top: 2rem;
+    }
+
+    .cpu-btn {
+        font-size: 1rem;
+    }
+
 
 }
 
@@ -406,6 +515,51 @@ section {
         margin: 0;
         font-size: 3.75rem;
     }
+
+    .cpu-section {
+        padding: 2rem 0 4rem 0;
+        border-radius: 1rem;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .cpu-section h2 {
+        font-size: 2.6rem;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        margin-top: 2.5rem;
+    }
+
+    .cpu-section h3 {
+        font-size: 2.6rem;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    .cpu-section p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .cpu-section small {
+        font-size: 1.1rem;
+    }
+
+    .cpu-image {
+        align-self: flex-end;
+    }
+
+    .cpu-image img {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .cpu-text {
+        margin-top: 0;
+        padding-right: 0.5rem;
+        padding-left: 2rem;
+    }
 }
 
 /*large devices*/
@@ -482,8 +636,52 @@ section {
     }
 
     .m1-image {
-    margin-top: -5.5rem;
-}
+        margin-top: -5.5rem;
+    }
+
+    .cpu-section {
+        padding: 2rem 0 4rem 0;
+        border-radius: 1rem;
+        margin: 0 2rem;
+
+    }
+
+    .cpu-section h2 {
+        font-size: 3.3rem;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        margin-top: 3.5rem;
+    }
+
+    .cpu-section h3 {
+        font-size: 3.3rem;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    .cpu-section p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .cpu-section small {
+        font-size: 1.1rem;
+    }
+
+    .cpu-image {
+        align-self: flex-end;
+    }
+
+    .cpu-image img {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .cpu-text {
+        margin-top: 0;
+        padding-right: 3rem;
+        padding-left: 2rem;
+    }
 
 }
 
@@ -540,8 +738,55 @@ section {
     }
 
     .m1-image {
-    margin-top: -6.5rem;
-}
+        margin-top: -6.5rem;
+    }
+
+    .cpu-section {
+        padding: 2rem 0 4rem 0;
+        border-radius: 1rem;
+        margin: 0 2rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .cpu-section h2 {
+        font-size: 4rem;
+        line-height: 1.1em;
+        margin-bottom: 0;
+        margin-top: 5rem;
+    }
+
+    .cpu-section h3 {
+        font-size: 4rem;
+        line-height: 1.1em;
+        margin: 0;
+    }
+
+    .cpu-section p {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin-right: 4rem;
+    }
+
+    .cpu-section small {
+        font-size: 1.3rem;
+    }
+
+    .cpu-image {
+        padding-left: 2rem;
+        align-self: flex-end;
+    }
+
+    .cpu-image img {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .cpu-text {
+        margin-top: 0;
+        padding-right: 0;
+        padding-left: 2rem;
+    }
 }
 
 /*big screens*/
