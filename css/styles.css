@@ -302,6 +302,63 @@ section {
     cursor: pointer;
 }
 
+.gpu-section {
+    background: url('../images/game.jpg');
+    background-size: cover;
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+}
+
+.gpu-section-left h2 {
+    color: #4593ac;
+    font-size: 2rem;
+    font-family: 'inter-bold';
+    margin-bottom: 0;
+    margin-top: 2rem;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+.gpu-section-left h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'inter-bold';
+    margin: 0;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+.gpu-section-left {
+    margin-bottom: 2rem;
+}
+
+.gpu-small {
+    color: #fff;
+    font-family: 'inter-medium';
+    font-size: 0.9rem;
+}
+
+.gpu-section-right {
+    color: #fff;
+    text-align: center;
+}
+
+.gpu-section-right small {
+    font-size: 1.2rem;
+}
+
+.gpu-section-right p {
+    margin: 0;
+    font-size: 5.5rem;
+    font-family: 'inter-bold';
+}
+
 /*media queries*/
 
 /*small devices*/
@@ -414,7 +471,8 @@ section {
         line-height: 1.5rem;
     }
 
-    .cpu-section small {
+    .cpu-section small,
+    .gpu-small {
         font-size: 1.5rem;
     }
 
@@ -430,6 +488,50 @@ section {
 
     .cpu-btn {
         font-size: 1rem;
+    }
+
+    .gpu-section {
+        padding: 2.5rem 1.5rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin-bottom: 2rem;
+    }
+
+    .gpu-section-left h2 {
+        font-size: 2.2rem;
+        margin-top: 2rem;
+        line-height: 1.25em;
+        text-align: left;
+    }
+
+    .gpu-section-left h3 {
+        font-size: 2.2rem;
+        margin: 0;
+        line-height: 1.25em;
+        text-align: left;
+    }
+
+    .gpu-section-left {
+        margin-bottom: 2rem;
+    }
+
+    .gpu-section-right {
+        margin: 0 auto;
+    }
+
+    .gpu-small {
+        font-family: 'inter-medium';
+        font-size: 1.1rem;
+    }
+
+    .gpu-section-right small {
+        font-size: 1.2rem;
+        font-family: 'inter-medium';
+    }
+
+    .gpu-section-right p {
+        margin: 0;
+        font-size: 7rem;
     }
 
 
@@ -542,7 +644,8 @@ section {
         line-height: 1.5rem;
     }
 
-    .cpu-section small {
+    .cpu-section small,
+    .gpu-small {
         font-size: 1.1rem;
     }
 
@@ -560,238 +663,334 @@ section {
         padding-right: 0.5rem;
         padding-left: 2rem;
     }
-}
 
-/*large devices*/
-@media (min-width: 1024px) {
-    nav {
-        padding: 0 5.5rem;
+    .gpu-section {
+        grid-template-columns: 60% 40%;
     }
 
-    nav ul li a {
-        font-size: 0.75rem;
+    .gpu-section-left h2 {
+        font-size: 2.5rem;
     }
 
-    nav ul li a:hover {
-        color: #fff;
+    .gpu-section-left h3 {
+        font-size: 2.5rem;
     }
 
-    .nav-btn {
-        font-size: 0.75rem;
+    .gpu-section-left {
+        margin-bottom: 2rem;
     }
 
-    .banner-links {
-
-        font-size: 0.75rem;
+    .gpu-small {
+        font-family: 'inter-medium';
+        font-size: 1.1rem;
     }
 
-    .nav-banner-1 {
-        padding: 0 5.5rem;
-    }
-
-    .nav-banner-2 p {
-        font-size: 0.875rem;
-    }
-
-    .main-header-text {
-        margin: auto 10rem;
-    }
-
-    .main-header-text p,
-    .m1-section p {
-        font-size: 1.313rem;
-        line-height: 1.938rem;
-    }
-
-    .main-header-text h3 {
-        font-size: 4.375rem;
-    }
-
-    .main-header-text h2 {
-        font-size: 1.875rem;
-    }
-
-    .m1-small {
-        width: 5.625rem;
-        height: 5.625rem;
-    }
-
-    .apple-2 {
-        width: 4.1rem;
-        height: 4.1rem;
-    }
-
-    .m1-section {
-        margin: 8rem 10rem 0 7rem;
-    }
-
-    .m1-section h2 {
-        font-size: 4.3rem;
-        margin-bottom: 0.625rem;
-    }
-
-    .m1-section h3 {
-        margin: 0;
-        font-size: 4.3rem;
-    }
-
-    .m1-image {
-        margin-top: -5.5rem;
-    }
-
-    .cpu-section {
-        padding: 2rem 0 4rem 0;
-        border-radius: 1rem;
-        margin: 0 2rem;
-
-    }
-
-    .cpu-section h2 {
-        font-size: 3.3rem;
-        line-height: 1.2em;
-        margin-bottom: 0;
-        margin-top: 3.5rem;
-    }
-
-    .cpu-section h3 {
-        font-size: 3.3rem;
-        line-height: 1.2em;
-        margin: 0;
-    }
-
-    .cpu-section p {
+    .gpu-section-right small {
         font-size: 1.2rem;
-        line-height: 1.7rem;
+        font-family: 'inter-medium';
     }
 
-    .cpu-section small {
-        font-size: 1.1rem;
-    }
-
-    .cpu-image {
-        align-self: flex-end;
-    }
-
-    .cpu-image img {
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .cpu-text {
-        margin-top: 0;
-        padding-right: 3rem;
-        padding-left: 2rem;
-    }
-
-}
-
-/*extra large devices*/
-@media (min-width: 1280px) {
-    nav {
-        padding: 0 11rem;
-    }
-
-    .nav-banner-1 {
-        padding: 0 11rem;
-    }
-
-    .main-header-text h3 {
-        font-size: 5.5rem;
-    }
-
-    .main-header-text {
-        margin: auto 13rem;
-    }
-
-    .main-header-text p,
-    .m1-section p {
-        font-size: 1.5rem;
-        line-height: 2.313rem;
-    }
-
-    .main-header-text h2 {
-        font-size: 1.938rem;
-    }
-
-    .m1-small {
-        width: 6.25rem;
-        height: 6.25rem;
-    }
-
-    .apple-2 {
-        width: 4.1rem;
-        height: 4.1rem;
-    }
-
-    .m1-section {
-        margin: 8rem 23rem 0 12rem;
-    }
-
-    .m1-section h2 {
-        font-size: 4.375rem;
-        margin-bottom: 0.625rem;
-    }
-
-    .m1-section h3 {
+    .gpu-section-right p {
         margin: 0;
-        font-size: 4.375rem;
+        font-size: 6rem;
     }
 
-    .m1-image {
-        margin-top: -6.5rem;
+    /*large devices*/
+    @media (min-width: 1024px) {
+        nav {
+            padding: 0 5.5rem;
+        }
+
+        nav ul li a {
+            font-size: 0.75rem;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+        }
+
+        .nav-btn {
+            font-size: 0.75rem;
+        }
+
+        .banner-links {
+
+            font-size: 0.75rem;
+        }
+
+        .nav-banner-1 {
+            padding: 0 5.5rem;
+        }
+
+        .nav-banner-2 p {
+            font-size: 0.875rem;
+        }
+
+        .main-header-text {
+            margin: auto 10rem;
+        }
+
+        .main-header-text p,
+        .m1-section p {
+            font-size: 1.313rem;
+            line-height: 1.938rem;
+        }
+
+        .main-header-text h3 {
+            font-size: 4.375rem;
+        }
+
+        .main-header-text h2 {
+            font-size: 1.875rem;
+        }
+
+        .m1-small {
+            width: 5.625rem;
+            height: 5.625rem;
+        }
+
+        .apple-2 {
+            width: 4.1rem;
+            height: 4.1rem;
+        }
+
+        .m1-section {
+            margin: 8rem 10rem 0 7rem;
+        }
+
+        .m1-section h2 {
+            font-size: 4.3rem;
+            margin-bottom: 0.625rem;
+        }
+
+        .m1-section h3 {
+            margin: 0;
+            font-size: 4.3rem;
+        }
+
+        .m1-image {
+            margin-top: -5.5rem;
+        }
+
+        .cpu-section {
+            padding: 2rem 0 4rem 0;
+            border-radius: 1rem;
+            margin: 0 2rem;
+
+        }
+
+        .cpu-section h2 {
+            font-size: 3.3rem;
+            line-height: 1.2em;
+            margin-bottom: 0;
+            margin-top: 3.5rem;
+        }
+
+        .cpu-section h3 {
+            font-size: 3.3rem;
+            line-height: 1.2em;
+            margin: 0;
+        }
+
+        .cpu-section p {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+
+        .cpu-section small {
+            font-size: 1.1rem;
+        }
+
+        .cpu-image {
+            align-self: flex-end;
+        }
+
+        .cpu-image img {
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .cpu-text {
+            margin-top: 0;
+            padding-right: 3rem;
+            padding-left: 2rem;
+        }
+
+
+        .gpu-section {
+            height: 30rem;
+            align-items: center;
+        }
+
+        .gpu-section-left h2 {
+            font-size: 3.9rem;
+        }
+
+        .gpu-section-left h3 {
+            font-size: 3.9rem;
+        }
+
+        .gpu-section-left {
+            margin-bottom: 2rem;
+        }
+
+        .gpu-small {
+            font-family: 'inter-medium';
+            font-size: 1.2rem;
+        }
+
+        .gpu-section-right small {
+            font-size: 1.2rem;
+            font-family: 'inter-medium';
+        }
+
+        .gpu-section-right p {
+            margin: 0;
+            font-size: 8rem;
+        }
+
     }
 
-    .cpu-section {
-        padding: 2rem 0 4rem 0;
-        border-radius: 1rem;
-        margin: 0 2rem;
-        display: grid;
-        grid-template-columns: 50% 50%;
+    /*extra large devices*/
+    @media (min-width: 1280px) {
+        nav {
+            padding: 0 11rem;
+        }
+
+        .nav-banner-1 {
+            padding: 0 11rem;
+        }
+
+        .main-header-text h3 {
+            font-size: 5.5rem;
+        }
+
+        .main-header-text {
+            margin: auto 13rem;
+        }
+
+        .main-header-text p,
+        .m1-section p {
+            font-size: 1.5rem;
+            line-height: 2.313rem;
+        }
+
+        .main-header-text h2 {
+            font-size: 1.938rem;
+        }
+
+        .m1-small {
+            width: 6.25rem;
+            height: 6.25rem;
+        }
+
+        .apple-2 {
+            width: 4.1rem;
+            height: 4.1rem;
+        }
+
+        .m1-section {
+            margin: 8rem 23rem 0 12rem;
+        }
+
+        .m1-section h2 {
+            font-size: 4.375rem;
+            margin-bottom: 0.625rem;
+        }
+
+        .m1-section h3 {
+            margin: 0;
+            font-size: 4.375rem;
+        }
+
+        .m1-image {
+            margin-top: -6.5rem;
+        }
+
+        .cpu-section {
+            padding: 2rem 0 4rem 0;
+            border-radius: 1rem;
+            margin: 0 2rem;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .cpu-section h2 {
+            font-size: 4rem;
+            line-height: 1.1em;
+            margin-bottom: 0;
+            margin-top: 5rem;
+        }
+
+        .cpu-section h3 {
+            font-size: 4rem;
+            line-height: 1.1em;
+            margin: 0;
+        }
+
+        .cpu-section p {
+            font-size: 1.1rem;
+            line-height: 1.7rem;
+            margin-right: 4rem;
+        }
+
+        .cpu-section small {
+            font-size: 1.3rem;
+        }
+
+        .cpu-image {
+            padding-left: 2rem;
+            align-self: flex-end;
+        }
+
+        .cpu-image img {
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .cpu-text {
+            margin-top: 0;
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+
+        .gpu-section {
+            height: 40rem;
+            align-items: center;
+            grid-template-columns: 50% 50%;
+        }
+
+        .gpu-section-left h2 {
+            font-size: 4.5rem;
+        }
+
+        .gpu-section-left h3 {
+            font-size: 4.5rem;
+        }
+
+        .gpu-section-left {
+            margin-bottom: 2rem;
+        }
+
+        .gpu-small {
+            font-family: 'inter-medium';
+            font-size: 1.2rem;
+        }
+
+        .gpu-section-right small {
+            font-size: 1.6rem;
+            font-family: 'inter-medium';
+        }
+
+        .gpu-section-right p {
+            font-size: 9rem;
+        }
+
     }
 
-    .cpu-section h2 {
-        font-size: 4rem;
-        line-height: 1.1em;
-        margin-bottom: 0;
-        margin-top: 5rem;
-    }
-
-    .cpu-section h3 {
-        font-size: 4rem;
-        line-height: 1.1em;
-        margin: 0;
-    }
-
-    .cpu-section p {
-        font-size: 1.1rem;
-        line-height: 1.7rem;
-        margin-right: 4rem;
-    }
-
-    .cpu-section small {
-        font-size: 1.3rem;
-    }
-
-    .cpu-image {
-        padding-left: 2rem;
-        align-self: flex-end;
-    }
-
-    .cpu-image img {
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .cpu-text {
-        margin-top: 0;
-        padding-right: 0;
-        padding-left: 2rem;
-    }
-}
-
-/*big screens*/
-@media (min-width: 1536px) {
-    /*.main-header-text h3 {
+    /*big screens*/
+    @media (min-width: 1536px) {
+        /*.main-header-text h3 {
         font-size: rem;
     }*/
-}
+    }
