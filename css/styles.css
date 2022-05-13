@@ -366,7 +366,7 @@ media queries
 @media (min-width: 640px) {
     /*header styles*/
     nav {
-        padding: 0 3rem;
+        padding: 0 2rem;
     }
 
     .nav-banner-1 {
