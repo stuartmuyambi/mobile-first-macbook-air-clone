@@ -34,7 +34,6 @@ body {
     background-color: #000000;
 }
 
-/*text selection color and background*/
 ::selection {
     color: #060606;
     background: #aaa;
@@ -143,10 +142,6 @@ nav ul li a {
     width: 100%;
 }
 
-section {
-    margin: 0 1.063rem;
-}
-
 .main-header-text {
     text-align: center;
 }
@@ -217,10 +212,6 @@ section {
     width: 5.625rem;
 }
 
-.full {
-    width: 100%;
-}
-
 #event-link {
     color: #ddd;
 }
@@ -238,6 +229,9 @@ section {
     width: 100%;
 }
 
+/*end of feature styles*/
+
+/*cpu section styles*/
 .cpu-section {
     background: #3d4881;
     background: -webkit-linear-gradient(to top, #1b4189, #7c309d);
@@ -302,6 +296,10 @@ section {
     cursor: pointer;
 }
 
+/*end of cpu section styles*/
+
+/*gpu section styles*/
+
 .gpu-section {
     background: url('../images/game.jpg');
     background-size: cover;
@@ -359,10 +357,16 @@ section {
     font-family: 'inter-bold';
 }
 
-/*media queries*/
+/*end of gpu section styles*/
+
+/*=================================================
+media queries
+=================================================*/
 
 /*small devices*/
 @media (min-width: 640px) {
+
+    /*header styles*/
     nav {
         padding: 0 3rem;
     }
@@ -445,6 +449,7 @@ section {
         margin-top: -3.125rem;
     }
 
+    /*cpu section styles*/
     .cpu-section {
         padding: 4rem 0 4rem 0;
         border-radius: 1rem;
@@ -471,11 +476,6 @@ section {
         line-height: 1.5rem;
     }
 
-    .cpu-section small,
-    .gpu-small {
-        font-size: 1.5rem;
-    }
-
     .cpu-image img {
         padding-left: 3rem;
         width: 100%;
@@ -488,6 +488,12 @@ section {
 
     .cpu-btn {
         font-size: 1rem;
+    }
+
+
+    /*gpu sectio styles*/
+    .gpu-small {
+        font-size: 1.5rem;
     }
 
     .gpu-section {
@@ -547,6 +553,8 @@ section {
 
 /*medium devices*/
 @media (min-width: 768px) {
+
+    /*header section styles*/
     .mobile-menu {
         display: none;
     }
@@ -626,6 +634,8 @@ section {
         font-size: 3.75rem;
     }
 
+    /*cpu section styles*/
+
     .cpu-section {
         padding: 2rem 0 4rem 0;
         border-radius: 1rem;
@@ -675,6 +685,8 @@ section {
         padding-left: 2rem;
     }
 
+    /*gpu section styles*/
+
     .gpu-section {
         grid-template-columns: 50% 50%;
         align-items: center;
@@ -712,6 +724,8 @@ section {
 
     /*large devices*/
     @media (min-width: 1024px) {
+
+        /*header section styles*/
         nav {
             padding: 0 5.5rem;
         }
@@ -787,6 +801,8 @@ section {
             margin-top: -5.5rem;
         }
 
+        /*cpu section styles*/
+
         .cpu-section {
             padding: 2rem 0 4rem 0;
             border-radius: 1rem;
@@ -831,6 +847,7 @@ section {
             padding-left: 2rem;
         }
 
+        /*gpu section styles*/
 
         .gpu-section {
             height: 30rem;
@@ -876,6 +893,8 @@ section {
 
     /*extra large devices*/
     @media (min-width: 1280px) {
+
+        /*header section styles*/
         nav {
             padding: 0 11rem;
         }
@@ -938,6 +957,8 @@ section {
             grid-template-columns: 50% 50%;
         }
 
+        /*cpu sectio styles*/
+
         .cpu-section h2 {
             font-size: 4rem;
             line-height: 1.1em;
@@ -977,6 +998,8 @@ section {
             padding-left: 2rem;
         }
 
+        /*gpu section styles*/
+
         .gpu-section {
             height: 40rem;
             align-items: center;
@@ -1012,8 +1035,4 @@ section {
     }
 
     /*big screens*/
-    @media (min-width: 1536px) {
-        /*.main-header-text h3 {
-        font-size: rem;
-    }*/
-    }
+    @media (min-width: 1536px) {}
