@@ -549,17 +549,9 @@ media queries
 /*medium devices*/
 @media (min-width: 768px) {
     /*header section styles*/
-    .mobile-menu {
-        display: none;
-    }
-
     nav {
         margin: 0.625rem 0;
-        padding: 0 3rem;
-    }
-
-    .nav-links {
-        display: block;
+        padding: 0 2rem;
     }
 
     .banner-links {
@@ -730,6 +722,10 @@ media queries
 
     nav ul li a:hover {
         color: #fff;
+    }
+
+    .nav-links {
+        display: block;
     }
 
     .nav-btn {
