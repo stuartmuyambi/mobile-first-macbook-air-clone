@@ -51,8 +51,9 @@ body {
 /*navigation and header styles*/
 nav {
     margin: 0.8rem 0;
-    padding: 0 1.6rem;
+    padding: 0 1.4rem;
     color: #cbcbcb;
+    background-color: #000000eb;
 }
 
 nav ul {
@@ -73,8 +74,8 @@ nav ul li a {
 }
 
 .nav-icons {
-    width: 0.938rem;
-    height: 0.938rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .apple-icon:hover {
