@@ -4,33 +4,38 @@
 
 /*import custom fonts*/
 @font-face {
-    font-family: "inter-regular";
-    src: url("../fonts/Inter-Regular-slnt=0.ttf");
+    font-family: "sf-text-regular";
+    src: url("../fonts/sf-pro/sf-pro-text_regular.woff2");
 }
 
 @font-face {
-    font-family: "inter-medium";
-    src: url("../fonts/Inter-Medium-slnt=0.ttf");
+    font-family: "sf-display-regular";
+    src: url("../fonts/sf-pro/sf-pro-display_regular.woff2");
 }
 
 @font-face {
-    font-family: "inter-bold";
-    src: url("../fonts/Inter-Bold-slnt=0.ttf");
+    font-family: "sf-display-medium";
+    src: url("../fonts/sf-pro/sf-pro-display_medium.woff2");
 }
 
 @font-face {
-    font-family: "sf-medium";
-    src: url("../fonts/SFPRODISPLAYMEDIUM.OTF");
+    font-family: "sf-text-semibold";
+    src: url("../fonts/sf-pro/sf-pro-text_semibold.woff2");
 }
 
 @font-face {
-    font-family: "sf-bold";
-    src: url("../fonts/SFPRODISPLAYBOLD.OTF");
+    font-family: "sf-display-semibold";
+    src: url("../fonts/sf-pro/sf-pro-display_semibold.woff2");
+}
+
+@font-face {
+    font-family: "sf-display-bold";
+    src: url("../fonts/sf-pro/sf-pro-display_bold.woff2");
 }
 
 /*main styles*/
 body {
-    font-family: "Inter-Regular";
+    font-family: "sf-text-regular", Arial, Helvetica, sans-serif;
     background-color: #000000;
 }
 
@@ -50,27 +55,32 @@ body {
 
 /*navigation and header styles*/
 nav {
-    margin: 0.8rem 0;
-    padding: 0 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 3rem;
     color: #cbcbcb;
     background-color: #000000eb;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-links {
+    display: none;
 }
 
 nav ul li a {
     color: #cbcbcb;
     text-decoration: none;
-    font-size: 0.688rem;
-}
-
-.nav-links {
-    display: none;
+    font-size: 0.7rem;
+    font-family: "sf-text-regular", Arial, Helvetica, sans-serif;
 }
 
 .nav-icons {
@@ -365,10 +375,6 @@ media queries
 /*small devices*/
 @media (min-width: 640px) {
     /*header styles*/
-    nav {
-        padding: 0 2rem;
-    }
-
     .nav-banner-1 {
         padding: 0 3rem;
     }
@@ -546,14 +552,10 @@ media queries
     }
 }
 
-/*medium devices*/
+/* medium devices
+================================================== */
 @media (min-width: 768px) {
     /*header section styles*/
-    nav {
-        margin: 0.625rem 0;
-        padding: 0 2rem;
-    }
-
     .banner-links {
         display: block;
         color: #cbcbcb;
@@ -709,15 +711,25 @@ media queries
     }
 }
 
-/*large devices*/
+/* large devices
+======================================= */
 @media (min-width: 1024px) {
     /*header section styles*/
-    nav {
-        padding: 0 5.5rem;
+    .mobile-menu {
+        display: none;
     }
 
-    nav ul li a {
-        font-size: 0.75rem;
+    .nav-icons {
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .apple-icon:hover {
+        color: #fff;
+    }
+
+    nav {
+        padding: 0 1.5rem;
     }
 
     nav ul li a:hover {
@@ -878,11 +890,16 @@ media queries
     }
 }
 
-/*extra large devices*/
+/* extra large devices
+=============================================== */
 @media (min-width: 1280px) {
     /*header section styles*/
     nav {
-        padding: 0 11rem;
+        padding: 0 12rem;
+    }
+
+    nav ul li a {
+        font-size: 0.75rem;
     }
 
     .nav-banner-1 {
