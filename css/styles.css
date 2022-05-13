@@ -110,13 +110,13 @@ nav ul li a {
 .nav-banner-1 p {
     margin: 0 auto 0 0;
     color: #eaeaea;
-    font-family: "inter-medium";
+    font-family: "sf-text-medium";
     font-size: 0.875rem;
 }
 
 .nav-banner-2 p {
     text-align: center;
-    font-family: "inter-regular";
+    font-family: "sf-text-regular";
     color: #eaeaea;
     font-size: 0.75rem;
     margin: 0;
@@ -125,7 +125,7 @@ nav ul li a {
 
 .nav-btn {
     border: none;
-    font-family: "inter-regular";
+    font-family: "sf-text-regular";
     padding: 0.313rem 0.813rem;
     margin-left: 0.625rem;
     border-radius: 1.25rem;
@@ -148,6 +148,10 @@ nav ul li a {
 
 /*feature content*/
 
+.feature-image-container {
+    margin: 0 auto;
+}
+
 .feature-image {
     margin: 2.813rem 0 0 0;
     width: 100%;
@@ -161,22 +165,25 @@ nav ul li a {
     color: #f5f5f6;
     font-size: 1.125rem;
     margin: 0;
-    font-family: "sf-medium";
+    font-family: "sf-text-regular";
 }
 
 .main-header-text h3 {
     font-size: 1.75rem;
     margin: 0.625rem 0;
-    font-family: "sf-bold";
-    background: -webkit-radial-gradient(circle, #d8d9e6, #2e2e31);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-family: "sf-display-bold";
+    background: radial-gradient(#eff1ff, #000);
+	background-size: 100% 200%;
+	background-position: 50% 100%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .main-header-text p,
 .m1-section p {
     text-align: center;
-    font-family: "inter-medium";
+    font-family: "sf-display-medium";
     color: #a1a1a6;
     font-size: 0.875rem;
     line-height: 1.563rem;
@@ -209,7 +216,7 @@ nav ul li a {
     margin: 0;
     color: #f4f4f4;
     font-size: 1.6rem;
-    font-family: "sf-bold";
+    font-family: "sf-display-bold";
 }
 
 .m1-section p {
@@ -244,9 +251,7 @@ nav ul li a {
 
 /*cpu section styles*/
 .cpu-section {
-    background: #3d4881;
-    background: -webkit-linear-gradient(to top, #1b4189, #7c309d);
-    background: linear-gradient(to top, #1b4189, #7c309d);
+    background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
     padding: 2rem 0 2rem 0;
     border-radius: 1rem;
     margin-top: 2.5rem;
@@ -256,7 +261,7 @@ nav ul li a {
 
 .cpu-section h2 {
     color: #c38bfb;
-    font-family: "inter-bold";
+    font-family: "sf-display-bold";
     font-size: 2rem;
     line-height: 1.25em;
     margin-bottom: 0;
@@ -264,7 +269,7 @@ nav ul li a {
 
 .cpu-section h3 {
     color: #ffffff;
-    font-family: "inter-bold";
+    font-family: "sf-display-bold";
     font-size: 2rem;
     line-height: 1.25em;
     margin: 0;
@@ -274,13 +279,13 @@ nav ul li a {
     color: #ffffff;
     font-size: 0.9rem;
     line-height: 1.5rem;
-    font-family: "inter-medium";
+    font-family: "sf-display-medium";
 }
 
 .cpu-section small {
     color: #fff;
     font-size: 0.9rem;
-    font-family: "inter-medium";
+    font-family: "sf-display-medium";
 }
 
 .cpu-image img {
@@ -311,7 +316,7 @@ nav ul li a {
 /*gpu section styles*/
 
 .gpu-section {
-    background: url("../images/game.jpg");
+    background: url("../images/backgrounds/game-gpu-section.jpg");
     background-size: cover;
     height: auto;
     border-radius: 1rem;
@@ -325,7 +330,7 @@ nav ul li a {
 .gpu-section-left h2 {
     color: #4593ac;
     font-size: 2rem;
-    font-family: "inter-bold";
+    font-family: "sf-display-bold";
     margin-bottom: 0;
     margin-top: 2rem;
     line-height: 1.25em;
@@ -335,7 +340,7 @@ nav ul li a {
 .gpu-section-left h3 {
     color: #fff;
     font-size: 2rem;
-    font-family: "inter-bold";
+    font-family: "sf-display-bold";
     margin: 0;
     line-height: 1.25em;
     text-align: center;
@@ -347,7 +352,7 @@ nav ul li a {
 
 .gpu-small {
     color: #fff;
-    font-family: "inter-medium";
+    font-family: "sf-display-medium";
     font-size: 0.9rem;
 }
 
@@ -363,7 +368,7 @@ nav ul li a {
 .gpu-section-right p {
     margin: 0;
     font-size: 5.5rem;
-    font-family: "inter-bold";
+    font-family: "sf-display-bold";
 }
 
 /*end of gpu section styles*/
@@ -380,7 +385,7 @@ media queries
     }
 
     .nav-banner-1 p {
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
         font-size: 0.938rem;
     }
 
@@ -537,13 +542,13 @@ media queries
     }
 
     .gpu-small {
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
         font-size: 1.1rem;
     }
 
     .gpu-section-right small {
         font-size: 1.2rem;
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
     }
 
     .gpu-section-right p {
@@ -693,7 +698,7 @@ media queries
     }
 
     .gpu-small {
-        font-family: "inter-bold";
+        font-family: "sf-display-bold";
         font-size: 1.1rem;
         position: absolute;
         top: 40px;
@@ -702,7 +707,7 @@ media queries
 
     .gpu-section-right small {
         font-size: 1.2rem;
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
     }
 
     .gpu-section-right p {
@@ -875,13 +880,13 @@ media queries
     }
 
     .gpu-small {
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
         font-size: 1.2rem;
     }
 
     .gpu-section-right small {
         font-size: 1.2rem;
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
     }
 
     .gpu-section-right p {
@@ -1022,13 +1027,13 @@ media queries
     }
 
     .gpu-small {
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
         font-size: 1.3rem;
     }
 
     .gpu-section-right small {
         font-size: 1.6rem;
-        font-family: "inter-medium";
+        font-family: "sf-display-medium";
     }
 
     .gpu-section-right p {
