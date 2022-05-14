@@ -53,6 +53,12 @@ body {
     text-decoration: underline;
 }
 
+.bi-chevron-right {
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+}
+
 /*navigation and header styles*/
 nav {
     display: flex;
@@ -79,8 +85,12 @@ nav ul {
 nav ul li a {
     color: #cbcbcb;
     text-decoration: none;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-family: "sf-text-regular", Arial, Helvetica, sans-serif;
+}
+
+#active {
+    color: #969697;
 }
 
 .nav-icons {
@@ -92,9 +102,15 @@ nav ul li a {
     color: #fff;
 }
 
+.banner-menu {
+    width: 1.2rem;
+    height: 1.2rem;
+    color: #eaeaea;
+}
+
 .nav-banner-1 {
     height: 3rem;
-    padding: 0 1.6rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,28 +126,28 @@ nav ul li a {
 .nav-banner-1 p {
     margin: 0 auto 0 0;
     color: #eaeaea;
-    font-family: "sf-text-medium";
-    font-size: 0.875rem;
+    font-family: "sf-display-medium";
+    font-size: 1.2rem;
 }
 
 .nav-banner-2 p {
     text-align: center;
     font-family: "sf-text-regular";
     color: #eaeaea;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin: 0;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 .nav-btn {
     border: none;
     font-family: "sf-text-regular";
-    padding: 0.313rem 0.813rem;
-    margin-left: 0.625rem;
+    padding: 0.3rem 0.9rem;
+    margin-left: 0.8rem;
     border-radius: 1.25rem;
-    background-color: #0070e3;
+    background-color: #147ce5;
     color: #fff;
-    font-size: 0.688rem;
+    font-size: 0.7rem;
     text-transform: capitalize;
 }
 
@@ -162,7 +178,7 @@ nav ul li a {
 }
 
 .main-header-text h2 {
-    color: #f5f5f6;
+    color: #f5f5f7;
     font-size: 1.125rem;
     margin: 0;
     font-family: "sf-text-regular";
@@ -173,11 +189,11 @@ nav ul li a {
     margin: 0.625rem 0;
     font-family: "sf-display-bold";
     background: radial-gradient(#eff1ff, #000);
-	background-size: 100% 200%;
-	background-position: 50% 100%;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position: 50% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .main-header-text p,
@@ -251,7 +267,12 @@ nav ul li a {
 
 /*cpu section styles*/
 .cpu-section {
-    background: linear-gradient(to right top, #194189 0%, #3B4980 25%, #8738A7 100%);
+    background: linear-gradient(
+        to right top,
+        #194189 0%,
+        #3b4980 25%,
+        #8738a7 100%
+    );
     padding: 2rem 0 2rem 0;
     border-radius: 1rem;
     margin-top: 2.5rem;
@@ -381,12 +402,7 @@ media queries
 @media (min-width: 640px) {
     /*header styles*/
     .nav-banner-1 {
-        padding: 0 3rem;
-    }
-
-    .nav-banner-1 p {
-        font-family: "sf-display-medium";
-        font-size: 0.938rem;
+        padding: 0 1rem;
     }
 
     .nav-banner-2 {
@@ -561,28 +577,9 @@ media queries
 ================================================== */
 @media (min-width: 768px) {
     /*header section styles*/
-    .banner-links {
-        display: block;
-        color: #cbcbcb;
-        text-decoration: none;
-        font-size: 0.688rem;
-        padding: 0 0.625rem;
-    }
 
     .feature-image {
         margin: 5rem 0 0 0;
-    }
-
-    .active {
-        color: #969697;
-    }
-
-    .nav-banner-1 p {
-        font-size: 1.12rem;
-    }
-
-    .nav-banner-2 p {
-        font-size: 0.75rem;
     }
 
     .main-header-text {
@@ -720,6 +717,15 @@ media queries
 ======================================= */
 @media (min-width: 1024px) {
     /*header section styles*/
+
+    .banner-links {
+        display: block;
+        color: #cbcbcb;
+        text-decoration: none;
+        font-size: 0.688rem;
+        padding: 0 0.625rem;
+    }
+
     .mobile-menu {
         display: none;
     }
@@ -731,6 +737,10 @@ media queries
 
     .apple-icon:hover {
         color: #fff;
+    }
+
+    .banner-menu-link {
+        display: none;
     }
 
     nav {
@@ -754,11 +764,15 @@ media queries
     }
 
     .nav-banner-1 {
-        padding: 0 5.5rem;
+        padding: 0 1.5rem;
     }
 
     .nav-banner-2 p {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-banner-1 p {
+        font-size: 1.3rem;
     }
 
     .main-header-text {
@@ -908,7 +922,7 @@ media queries
     }
 
     .nav-banner-1 {
-        padding: 0 11rem;
+        padding: 0 12rem;
     }
 
     .main-header-text h3 {
