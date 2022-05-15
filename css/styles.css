@@ -115,12 +115,11 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     background-color: #141416;
-    z-index: 100;
+    border-bottom: 1px solid #3c3c3c;
 }
 
 .nav-banner-2 {
     padding: 0.6rem 1.6rem;
-    border-top: 1px solid #3c3c3c;
     background-color: #141416;
 }
 
@@ -170,6 +169,7 @@ nav ul li a {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 200;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new
@@ -425,8 +425,7 @@ media queries
     .nav-banner-2 {
         height: 3rem;
         padding: 0 1.6rem;
-        border-top: 1px solid #3c3c3c;
-        background-color: #141416;
+        background-color: #141416fc;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
