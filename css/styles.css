@@ -1070,3 +1070,9 @@ media queries
         font-size: 9rem;
     }
 }
+
+/* Desktop Computers
+=============================================== */
+@media (min-width: 1536px) {
+    /* desktop  */
+}
