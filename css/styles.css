@@ -53,10 +53,15 @@ body {
     text-decoration: underline;
 }
 
-.bi-chevron-right {
+.bi-chevron-right-small {
     width: 8px;
     height: 8px;
     margin-left: 4px;
+}
+
+#bi-chevron-right {
+    width: 11px;
+    height: 11px;
 }
 
 /*navigation and header styles*/
@@ -220,7 +225,7 @@ position at the top of the page (position:fixed and top:0) */
     font-family: "sf-display-medium";
     color: #a1a1a6;
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
 }
 
 .m1-apple-heading {
@@ -497,6 +502,11 @@ media queries
         margin-top: -3.125rem;
     }
 
+    #bi-chevron-right {
+        width: 14px;
+        height: 14px;
+    }
+
     /*cpu section styles*/
     .cpu-section {
         padding: 4rem 0 4rem 0;
@@ -609,7 +619,7 @@ media queries
     }
 
     .main-header-text p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 2.4rem;
     }
 
@@ -659,6 +669,11 @@ media queries
     .m1-section h3 {
         margin: 0;
         font-size: 3.75rem;
+    }
+
+    #bi-chevron-right {
+        width: 16px;
+        height: 16px;
     }
 
     /*cpu section styles*/
@@ -992,6 +1007,11 @@ media queries
         height: 6.5rem;
     }
 
+    #bi-chevron-right {
+        width: 18px;
+        height: 18px;
+    }
+
     .apple-2 {
         width: 4.1rem;
         height: 4.1rem;
@@ -1125,5 +1145,10 @@ media queries
 
     .main-header-text h2 {
         font-size: 1.938rem;
+    }
+
+    #bi-chevron-right {
+        width: 20px;
+        height: 20px;
     }
 }
