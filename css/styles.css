@@ -182,12 +182,12 @@ position at the top of the page (position:fixed and top:0) */
 /*feature content*/
 
 .feature-image-container {
-    margin: 2rem 0;
+    margin: 3rem 0 2rem 0;
     width: 100%;
 }
 
 .feature-image {
-    padding-left: 0.5rem;
+    padding: 0 1rem;
     width: 100%;
 }
 
@@ -452,13 +452,11 @@ media queries
     }
 
     .feature-image-container {
-        margin: 4rem 0 2rem 0;
-        width: 100%;
+        margin: 3rem 0 2rem 0;
     }
 
     .feature-image {
-        padding: 0 3rem;
-        width: 100%;
+        padding: 0 4rem;
     }
 
     .m1-small-section {
@@ -605,10 +603,6 @@ media queries
 @media (min-width: 768px) {
     /*header section styles*/
 
-    .feature-image {
-        margin: 5rem 0 0 0;
-    }
-
     .main-header-text {
         margin: auto 5rem;
     }
@@ -628,13 +622,11 @@ media queries
     }
 
     .feature-image-container {
-        margin: 0 0 3rem 0;
-        width: 100%;
+        margin: 3rem 0 2rem 0;
     }
 
     .feature-image {
-        padding: 0 2rem;
-        width: 100%;
+        padding: 0 0 0 2rem;
     }
 
     .m1-small {
@@ -858,6 +850,10 @@ media queries
         margin-top: -5.5rem;
     }
 
+    .feature-image {
+        padding: 0 5rem;
+    }
+
     /*cpu section styles*/
 
     .cpu-section {
@@ -980,6 +976,10 @@ media queries
         font-size: 1.938rem;
     }
 
+    .feature-image {
+        padding: 0 10rem;
+    }
+
     .m1-small {
         width: 6.25rem;
         height: 6.25rem;
@@ -1095,5 +1095,11 @@ media queries
 /* Desktop Computers
 =============================================== */
 @media (min-width: 1536px) {
-    /* desktop  */
+    .feature-image-container {
+        margin: 4rem 0;
+    }
+
+    .feature-image {
+        padding: 0 0 0 10rem;
+    }
 }
