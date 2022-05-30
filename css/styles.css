@@ -307,7 +307,6 @@ position at the top of the page (position:fixed and top:0) */
         #8738a7 100%
     );
     padding: 2rem 0 2rem 0;
-    border-radius: 1rem;
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column-reverse;
@@ -316,7 +315,7 @@ position at the top of the page (position:fixed and top:0) */
 .cpu-section h2 {
     color: #c48cfc;
     font-family: "sf-display-bold";
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.25em;
     margin-bottom: 0;
 }
@@ -324,21 +323,21 @@ position at the top of the page (position:fixed and top:0) */
 .cpu-section h3 {
     color: #ffffff;
     font-family: "sf-display-bold";
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.25em;
     margin: 0;
 }
 
 .cpu-section p {
     color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
     font-family: "sf-display-medium";
 }
 
 .cpu-section small {
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-family: "sf-display-medium";
 }
 
@@ -347,8 +346,7 @@ position at the top of the page (position:fixed and top:0) */
 }
 
 .cpu-text {
-    padding: 0 1rem;
-    margin-top: 2rem;
+    padding: 0 1.5rem;
 }
 
 .cpu-btn {
@@ -528,29 +526,29 @@ media queries
 
     /*cpu section styles*/
     .cpu-section {
-        padding: 4rem 0 4rem 0;
+        padding: 0 1rem;
         border-radius: 1rem;
-        margin-top: 0;
+        margin: 3rem 5rem;
         display: flex;
         flex-direction: column-reverse;
     }
 
     .cpu-section h2 {
-        font-size: 3rem;
-        line-height: 1.2em;
+        font-size: 3.5rem;
+        line-height: 1.1em;
         margin-bottom: 0;
         margin-top: 1.9rem;
     }
 
     .cpu-section h3 {
-        font-size: 3rem;
-        line-height: 1.2em;
+        font-size: 3.5rem;
+        line-height: 1.1em;
         margin: 0;
     }
 
     .cpu-section p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 
     .cpu-image img {
