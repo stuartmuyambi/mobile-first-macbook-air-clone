@@ -39,11 +39,6 @@ body {
     background-color: #000000;
 }
 
-::selection {
-    color: #060606;
-    background: #aaa;
-}
-
 .link {
     text-decoration: none;
     color: #2997ff;
