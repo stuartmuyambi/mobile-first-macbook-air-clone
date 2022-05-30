@@ -182,10 +182,12 @@ position at the top of the page (position:fixed and top:0) */
 /*feature content*/
 
 .feature-image-container {
-    height: 10rem;
+    margin: 2rem 0;
+    width: 100%;
 }
 
 .feature-image {
+    padding-left: 0.5rem;
     width: 100%;
 }
 
@@ -449,6 +451,16 @@ media queries
         font-size: 2.875rem;
     }
 
+    .feature-image-container {
+        margin: 4rem 0 2rem 0;
+        width: 100%;
+    }
+
+    .feature-image {
+        padding: 0 3rem;
+        width: 100%;
+    }
+
     .m1-small-section {
         display: flex;
         justify-items: center;
@@ -613,6 +625,16 @@ media queries
 
     .main-header-text h2 {
         font-size: 1.563rem;
+    }
+
+    .feature-image-container {
+        margin: 0 0 3rem 0;
+        width: 100%;
+    }
+
+    .feature-image {
+        padding: 0 2rem;
+        width: 100%;
     }
 
     .m1-small {
