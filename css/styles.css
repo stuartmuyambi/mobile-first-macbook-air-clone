@@ -193,17 +193,18 @@ position at the top of the page (position:fixed and top:0) */
 
 .main-header-text {
     text-align: center;
+    padding: 0 1rem;
 }
 
 .main-header-text h2 {
     color: #f5f5f7;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     margin: 0;
     font-family: "sf-text-regular";
 }
 
 .main-header-text h3 {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     margin: 0.625rem 0;
     font-family: "sf-display-bold";
     background: radial-gradient(#eff1ff, #000);
@@ -219,8 +220,8 @@ position at the top of the page (position:fixed and top:0) */
     text-align: center;
     font-family: "sf-display-medium";
     color: #a1a1a6;
-    font-size: 0.875rem;
-    line-height: 1.563rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .m1-apple-heading {
@@ -433,22 +434,21 @@ media queries
         align-items: center;
     }
 
-    .main-header-text h2 {
-        font-size: 1.25rem;
-    }
-
     .main-header-text {
-        margin: auto 6rem;
+        padding: 0 2rem;
     }
 
-    .main-header-text p,
-    .m1-section p {
-        font-size: 0.938rem;
-        line-height: 1.75rem;
+    .main-header-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .main-header-text p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
     }
 
     .main-header-text h3 {
-        font-size: 2.875rem;
+        font-size: 3rem;
     }
 
     .feature-image-container {
@@ -604,17 +604,16 @@ media queries
     /*header section styles*/
 
     .main-header-text {
-        margin: auto 5rem;
+        padding: 0 3rem;
     }
 
-    .main-header-text p,
-    .m1-section p {
-        font-size: 1.25rem;
-        line-height: 1.938rem;
+    .main-header-text p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
     }
 
     .main-header-text h3 {
-        font-size: 3.75rem;
+        font-size: 4.3rem;
     }
 
     .main-header-text h2 {
@@ -622,7 +621,7 @@ media queries
     }
 
     .feature-image-container {
-        margin: 3rem 0 2rem 0;
+        margin: 3rem 0 3rem 0;
     }
 
     .feature-image {
@@ -805,21 +804,21 @@ media queries
     }
 
     .main-header-text {
-        margin: auto 10rem;
+        margin: auto 9rem;
+        padding: 0;
     }
 
-    .main-header-text p,
-    .m1-section p {
-        font-size: 1.313rem;
-        line-height: 1.938rem;
+    .main-header-text p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
     }
 
     .main-header-text h3 {
-        font-size: 4.375rem;
+        font-size: 4.5rem;
     }
 
     .main-header-text h2 {
-        font-size: 1.875rem;
+        font-size: 1.7rem;
     }
 
     .m1-small {
@@ -959,17 +958,16 @@ media queries
     }
 
     .main-header-text h3 {
-        font-size: 5.5rem;
+        font-size: 5.8rem;
     }
 
     .main-header-text {
-        margin: auto 13rem;
+        margin: auto 12rem;
     }
 
-    .main-header-text p,
-    .m1-section p {
-        font-size: 1.5rem;
-        line-height: 2.313rem;
+    .main-header-text p {
+        font-size: 1.9rem;
+        line-height: 2.6rem;
     }
 
     .main-header-text h2 {
@@ -1101,5 +1099,22 @@ media queries
 
     .feature-image {
         padding: 0 0 0 10rem;
+    }
+
+    .main-header-text h3 {
+        font-size: 6rem;
+    }
+
+    .main-header-text {
+        margin: auto 15rem;
+    }
+
+    .main-header-text p {
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+    }
+
+    .main-header-text h2 {
+        font-size: 1.938rem;
     }
 }
