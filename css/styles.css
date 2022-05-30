@@ -306,12 +306,11 @@ position at the top of the page (position:fixed and top:0) */
         #3b4980 25%,
         #8738a7 100%
     );
-    padding: 2rem 0 2rem 0;
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: 60rem;
+    height: 65rem;
 }
 
 .cpu-section h2 {
@@ -344,11 +343,11 @@ position at the top of the page (position:fixed and top:0) */
 }
 
 .cpu-image img {
-    width: 35rem;
+    width: 40rem;
 }
 
 .cpu-text {
-    padding: 0 1.5rem;
+    padding: 2rem 1.3rem;
     margin-bottom: 2rem;
 }
 
@@ -374,7 +373,6 @@ position at the top of the page (position:fixed and top:0) */
     background: url("../images/backgrounds/game-gpu-section.jpg");
     background-size: cover;
     height: auto;
-    border-radius: 1rem;
     margin-top: 2rem;
     padding: 2.5rem 1rem;
     display: flex;
@@ -529,11 +527,11 @@ media queries
 
     /*cpu section styles*/
     .cpu-section {
-        padding: 0 1rem;
         border-radius: 1rem;
         margin: 3rem 5rem;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        height: 60rem;
     }
 
     .cpu-section h2 {
@@ -555,13 +553,13 @@ media queries
     }
 
     .cpu-image img {
-        padding-left: 3rem;
-        width: 100%;
+        width: 35rem;
     }
 
     .cpu-text {
-        padding: 0 1rem;
+        padding: 0 2rem;
         margin-top: 2rem;
+        align-self: flex-end;
     }
 
     .cpu-btn {
@@ -708,6 +706,7 @@ media queries
         border-radius: 1rem;
         margin-top: 0;
         position: relative;
+        height: 50rem;
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -720,13 +719,13 @@ media queries
     }
 
     .cpu-section h3 {
-        font-size: 2.6rem;
+        font-size: 2.9rem;
         line-height: 1.2em;
         margin: 0;
     }
 
     .cpu-section p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.5rem;
     }
 
@@ -743,7 +742,7 @@ media queries
 
     .cpu-image img {
         padding-left: 0;
-        width: 100%;
+        width: 40rem;
     }
 
     .cpu-text {
@@ -913,6 +912,7 @@ media queries
         padding: 2rem 0 4rem 0;
         border-radius: 1rem;
         margin: 0 2rem;
+        height: 45rem;
     }
 
     .cpu-section h2 {
@@ -942,8 +942,7 @@ media queries
     }
 
     .cpu-image img {
-        padding-left: 0;
-        width: 100%;
+        width: 40rem;
     }
 
     .cpu-text {
@@ -1074,6 +1073,7 @@ media queries
         padding: 2rem 0 4rem 0;
         border-radius: 1rem;
         margin: 0 2rem;
+        height: 50rem;
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -1081,21 +1081,21 @@ media queries
     /*cpu sectio styles*/
 
     .cpu-section h2 {
-        font-size: 4rem;
+        font-size: 5rem;
         line-height: 1.1em;
         margin-bottom: 0;
         margin-top: 5rem;
     }
 
     .cpu-section h3 {
-        font-size: 4rem;
+        font-size: 5rem;
         line-height: 1.1em;
         margin: 0;
     }
 
     .cpu-section p {
-        font-size: 1.1rem;
-        line-height: 1.7rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
         margin-right: 4rem;
     }
 
@@ -1110,7 +1110,7 @@ media queries
 
     .cpu-image img {
         padding-left: 0;
-        width: 100%;
+        width: 45rem;
     }
 
     .cpu-text {
@@ -1208,5 +1208,9 @@ media queries
 
     .m1-icon {
         width: 180px;
+    }
+
+    .cpu-section h2 {
+        margin-top: 7rem;
     }
 }
