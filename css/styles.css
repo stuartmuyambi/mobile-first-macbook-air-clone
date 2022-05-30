@@ -220,12 +220,17 @@ position at the top of the page (position:fixed and top:0) */
     -webkit-text-fill-color: transparent;
 }
 
-.main-header-text p {
+.main-header-text p,
+.m1-section p {
     text-align: center;
     font-family: "sf-display-medium";
     color: #a1a1a6;
     font-size: 1.2rem;
     line-height: 1.9rem;
+}
+
+.m1-section p {
+    text-align: left;
 }
 
 .m1-apple-heading {
@@ -239,9 +244,13 @@ position at the top of the page (position:fixed and top:0) */
 }
 
 .m1-section {
-    margin-top: 4.5rem;
-    margin-left: 2rem;
+    margin-top: 6rem;
+    padding: 0 1.5rem;
     position: relative;
+}
+
+.m1-icon {
+    width: 120px;
 }
 
 .m1-section h2 {
@@ -254,16 +263,17 @@ position at the top of the page (position:fixed and top:0) */
 .m1-section h3 {
     margin: 0;
     color: #f4f4f4;
-    font-size: 1.6rem;
+    font-size: 3.3rem;
+    line-height: 1.2em;
     font-family: "sf-display-bold";
 }
 
-.m1-section p {
+/* .m1-section p {
     color: #a1a1a6;
     font-size: 0.938rem;
     line-height: 1.5rem;
     text-align: left;
-}
+} */
 
 .m1-small {
     width: 5.625rem;
@@ -446,7 +456,8 @@ media queries
         font-size: 1.3rem;
     }
 
-    .main-header-text p {
+    .main-header-text p,
+    .m1-section p {
         font-size: 1.4rem;
         line-height: 2.1rem;
     }
@@ -485,7 +496,7 @@ media queries
     }
 
     .m1-section {
-        margin: 6rem 7rem 0 3rem;
+        margin: 6rem 4rem;
     }
 
     .m1-section h2 {
@@ -495,7 +506,15 @@ media queries
 
     .m1-section h3 {
         margin: 0;
-        font-size: 2.875rem;
+        font-size: 4.5rem;
+    }
+
+    .m1-icon {
+        width: 140px;
+    }
+
+    .m1-section {
+        padding: 0;
     }
 
     .m1-image {
@@ -618,9 +637,14 @@ media queries
         align-items: center;
     }
 
-    .main-header-text p {
+    .main-header-text p,
+    .m1-section p {
         font-size: 1.4rem;
         line-height: 2.4rem;
+    }
+
+    .m1-section p {
+        max-width: 40rem;
     }
 
     .main-header-text h3 {
@@ -658,7 +682,7 @@ media queries
     }
 
     .m1-section {
-        margin: 7rem 6rem 0 3rem;
+        margin: 7rem 6rem 0 4rem;
     }
 
     .m1-section h2 {
@@ -668,7 +692,7 @@ media queries
 
     .m1-section h3 {
         margin: 0;
-        font-size: 3.75rem;
+        font-size: 3.5rem;
     }
 
     #bi-chevron-right {
@@ -832,9 +856,14 @@ media queries
         padding: 0;
     }
 
-    .main-header-text p {
+    .main-header-text p,
+    .m1-section p {
         font-size: 1.6rem;
         line-height: 2.5rem;
+    }
+
+    .m1-section p {
+        max-width: 44rem;
     }
 
     .main-header-text h3 {
@@ -856,7 +885,7 @@ media queries
     }
 
     .m1-section {
-        margin: 8rem 10rem 0 7rem;
+        margin: 8rem 10rem 0 9rem;
     }
 
     .m1-section h2 {
@@ -989,7 +1018,8 @@ media queries
         margin: auto 12rem;
     }
 
-    .main-header-text p {
+    .main-header-text p,
+    .m1-section p {
         font-size: 1.9rem;
         line-height: 2.6rem;
     }
@@ -1018,7 +1048,7 @@ media queries
     }
 
     .m1-section {
-        margin: 8rem 23rem 0 12rem;
+        margin: 8rem 20rem 0 12rem;
     }
 
     .m1-section h2 {
@@ -1028,7 +1058,11 @@ media queries
 
     .m1-section h3 {
         margin: 0;
-        font-size: 4.375rem;
+        font-size: 4.5rem;
+    }
+
+    .m1-section p {
+        max-width: 50rem;
     }
 
     .m1-image {
@@ -1138,8 +1172,9 @@ media queries
         margin: auto 15rem;
     }
 
-    .main-header-text p {
-        font-size: 2.2rem;
+    .main-header-text p,
+    .m1-section p {
+        font-size: 2rem;
         line-height: 2.9rem;
     }
 
@@ -1150,5 +1185,27 @@ media queries
     #bi-chevron-right {
         width: 20px;
         height: 20px;
+    }
+
+    .m1-section {
+        margin: 10rem 20rem 0 15rem;
+    }
+
+    .m1-section p {
+        max-width: 60rem;
+    }
+
+    .m1-section h2 {
+        font-size: 4.375rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .m1-section h3 {
+        margin: 0;
+        font-size: 5rem;
+    }
+
+    .m1-icon {
+        width: 180px;
     }
 }
