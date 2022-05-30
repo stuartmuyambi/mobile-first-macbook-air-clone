@@ -182,11 +182,10 @@ position at the top of the page (position:fixed and top:0) */
 /*feature content*/
 
 .feature-image-container {
-    margin: 0 auto;
+    height: 10rem;
 }
 
 .feature-image {
-    margin: 2.813rem 0 0 0;
     width: 100%;
 }
 
