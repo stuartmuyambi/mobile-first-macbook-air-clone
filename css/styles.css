@@ -489,8 +489,6 @@ position at the top of the page (position:fixed and top:0) */
     color: #fff;
     font-family: "sf-display-medium";
     font-size: 1.2rem;
-    top: 1.5rem;
-    left: 1.5rem;
 }
 
 .thermal-text {
@@ -524,6 +522,7 @@ position at the top of the page (position:fixed and top:0) */
 
 .ml-text small {
     font-size: 1.2rem;
+    color: white;
 }
 
 .ml-text p {
@@ -533,7 +532,8 @@ position at the top of the page (position:fixed and top:0) */
 }
 
 .ml-text span {
-    color: #f5f5f7;;
+    color: #f5f5f7;
+    ;
 }
 
 .ml-image img {
@@ -646,7 +646,7 @@ media queries
     /*cpu section styles*/
     .cpu-section {
         border-radius: 1rem;
-        margin: 2rem 5rem;
+        margin: 2rem 2rem;
         display: flex;
         flex-direction: column;
         height: 60rem;
@@ -688,7 +688,7 @@ media queries
     /*gpu sectio styles*/
     .gpu-section {
         padding: 3rem 1.5rem;
-        margin: 2rem 5rem;
+        margin: 2rem;
         position: relative;
         border-radius: 1rem;
     }
@@ -747,6 +747,20 @@ media queries
         border-radius: 1rem;
         height: 33rem;
         position: relative;
+    }
+
+    .ml-section {
+        margin: 3rem 5rem;
+        border-radius: 1rem;
+        height: 45rem;
+    }
+
+    .ml-text p {
+        font-size: 1.2rem;
+    }
+
+    .ml-image img {
+        width: 30rem;
     }
 
 }
@@ -927,7 +941,7 @@ media queries
         display: grid;
         grid-template-columns: 48% 48%;
         gap: 2rem;
-        margin: 0 5rem 2rem 5rem;
+        margin: 0 2rem 2rem 2rem;
     }
 
     .battery-section {
@@ -954,6 +968,32 @@ media queries
     .thermal-text {
         margin-top: 40%;
         margin-bottom: auto;
+    }
+
+    .ml-section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin: 3rem 2rem;
+        height: 35rem;
+        position: relative;
+        padding: 3rem 0;
+    }
+
+    .ml-text p {
+        font-size: 1.3rem;
+        max-width: 30rem;
+    }
+
+    .ml-text small {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+    .ml-image img {
+        width: 30rem;
+        margin-left: -12rem;
     }
 
 }
