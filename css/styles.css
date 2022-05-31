@@ -367,6 +367,7 @@ position at the top of the page (position:fixed and top:0) */
 .gpu-section {
     background: url("../images/backgrounds/game-gpu-section.jpg");
     background-size: cover;
+    background-position: center;
     height: auto;
     margin-top: 2rem;
     padding: 2.5rem 1rem;
@@ -377,36 +378,40 @@ position at the top of the page (position:fixed and top:0) */
 
 .gpu-section-left h2 {
     color: #4593ac;
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-family: "sf-display-bold";
     margin-bottom: 0;
     margin-top: 2rem;
     line-height: 1.25em;
-    text-align: center;
+    text-align: left;
 }
 
 .gpu-section-left h3 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-family: "sf-display-bold";
     margin: 0;
     line-height: 1.25em;
-    text-align: center;
+    text-align: left;
 }
 
 .gpu-section-left {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .gpu-small {
     color: #fff;
     font-family: "sf-display-medium";
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .gpu-section-right {
     color: #fff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    margin: 0 auto;
 }
 
 .gpu-section-right small {
@@ -417,6 +422,16 @@ position at the top of the page (position:fixed and top:0) */
     margin: 0;
     font-size: 5.5rem;
     font-family: "sf-display-bold";
+}
+
+.gpu-btn {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px 0;
 }
 
 /*end of gpu section styles*/
@@ -567,12 +582,10 @@ media queries
     }
 
     .gpu-section {
-        padding: 2.5rem 1.5rem;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        align-items: center;
-        margin-bottom: 2rem;
+        padding: 3rem 1.5rem;
+        margin: 3rem 5rem;
         position: relative;
+        border-radius: 1rem;
     }
 
     .gpu-small {
@@ -582,14 +595,14 @@ media queries
     }
 
     .gpu-section-left h2 {
-        font-size: 2.5rem;
+        font-size: 3.3rem;
         margin-top: 2rem;
         line-height: 1.25em;
         text-align: left;
     }
 
     .gpu-section-left h3 {
-        font-size: 2.5rem;
+        font-size: 3.3rem;
         margin: 0;
         line-height: 1.25em;
         text-align: left;
@@ -605,7 +618,7 @@ media queries
 
     .gpu-small {
         font-family: "sf-display-medium";
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .gpu-section-right small {
@@ -749,10 +762,12 @@ media queries
     /*gpu section styles*/
 
     .gpu-section {
+        display: grid;
         grid-template-columns: 50% 50%;
         align-items: center;
         background-position: center;
-        height: 20rem;
+        height: 28rem;
+        position: relative;
     }
 
     .gpu-section-left h2 {
@@ -781,6 +796,12 @@ media queries
     .gpu-section-right p {
         /*margin: 0;*/
         font-size: 6rem;
+    }
+
+    .gpu-btn {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
     }
 }
 
@@ -949,10 +970,17 @@ media queries
     /*gpu section styles*/
 
     .gpu-section {
-        height: 30rem;
+        height: 35rem;
         align-items: center;
         position: relative;
         margin: 2rem;
+        padding: 3rem;
+    }
+
+    .gpu-btn {
+        position: absolute;
+        bottom: 2rem;
+        left: 3rem;
     }
 
     .gpu-section-left h2 {
@@ -1207,5 +1235,50 @@ media queries
 
     .cpu-section h2 {
         margin-top: 7rem;
+    }
+
+    .gpu-section {
+        height: 45rem;
+    }
+
+    .gpu-btn {
+        font-size: 1.1rem;
+        border-radius: 30px;
+        bottom: 3rem;
+    }
+
+    .gpu-section-left h2 {
+        font-size: 5.1rem;
+        line-height: 1.1em;
+    }
+
+    .gpu-section-left h3 {
+        font-size: 5.1rem;
+        line-height: 1.1em;
+    }
+
+    .gpu-section-left small {
+        position: absolute;
+        top: 40px;
+        left: 25px;
+    }
+
+    .gpu-section-left {
+        margin-bottom: 2rem;
+    }
+
+    .gpu-small {
+        font-family: "sf-display-medium";
+        font-size: 1.3rem;
+    }
+
+    .gpu-section-right small {
+        font-size: 1.5rem;
+        font-family: "sf-display-medium";
+    }
+
+    .gpu-section-right p {
+        margin: 0;
+        font-size: 10rem;
     }
 }
