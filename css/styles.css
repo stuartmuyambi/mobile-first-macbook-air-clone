@@ -440,6 +440,25 @@ position at the top of the page (position:fixed and top:0) */
 
 /*end of gpu section styles*/
 
+/* grid section one  */
+.battery-section {
+    background: linear-gradient(to bottom, #203025 0%, #151516 100%);
+    margin: 2rem 0;
+    height: 35rem;
+}
+
+.thermal-section {
+    background: linear-gradient(
+        225deg,
+        #1623a6 0%,
+        #3343d4 29%,
+        #175eac 73%,
+        #176682 100%
+    );
+    margin: 2rem 0;
+    height: 35rem;
+}
+
 /*=================================================
 media queries
 =================================================*/
