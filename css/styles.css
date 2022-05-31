@@ -427,7 +427,8 @@ position at the top of the page (position:fixed and top:0) */
     font-family: "sf-display-bold";
 }
 
-.gpu-btn {
+.gpu-btn,
+.thermal-btn {
     color: #fff;
     background-color: transparent;
     border: 2px solid white;
@@ -883,7 +884,7 @@ media queries
     .gpu-btn {
         position: absolute;
         bottom: 1rem;
-        left: 1rem;
+        left: 2rem;
     }
 
     .grid-group-1 {
@@ -1134,6 +1135,37 @@ media queries
     .gpu-section-right p {
         margin: 0;
         font-size: 6rem;
+    }
+
+    .grid-group-1 {
+        grid-template-columns: 49% 48%;
+        margin: 2rem;
+    }
+
+    .battery-section {
+        margin: 0;
+    }
+
+    .battery-small {
+        font-size: 1.2rem;
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .battery-section h3 {
+        font-size: 3rem;
+        line-height: 1.2em;
+        max-width: 23rem;
+        margin: 5rem auto;
+    }
+
+    .thermal-section {
+        padding: 2rem 2rem;
+    }
+
+    .thermal-text {
+        font-size: 3rem;
+        margin-top: 30%;
     }
 }
 
