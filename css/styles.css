@@ -178,9 +178,10 @@ nav ul li a {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new
 position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
     padding-top: 102px;
 }
+
 /*end of header styles*/
 
 /*feature content*/
@@ -299,12 +300,10 @@ position at the top of the page (position:fixed and top:0) */
 
 /*cpu section styles*/
 .cpu-section {
-    background: linear-gradient(
-        to right top,
-        #194189 0%,
-        #3b4980 25%,
-        #8738a7 100%
-    );
+    background: linear-gradient(to right top,
+            #194189 0%,
+            #3b4980 25%,
+            #8738a7 100%);
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -449,6 +448,15 @@ position at the top of the page (position:fixed and top:0) */
     position: relative;
 }
 
+.battery-small {
+    position: absolute;
+    color: #fff;
+    font-family: "sf-display-medium";
+    font-size: 1.2rem;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
 .battery-section h3 {
     color: white;
     text-align: center;
@@ -460,44 +468,18 @@ position at the top of the page (position:fixed and top:0) */
     font-family: "sf-display-bold";
 }
 
-.battery-small {
-    position: absolute;
-    color: #fff;
-    font-family: "sf-display-medium";
-    font-size: 1.2rem;
-    top: 1.5rem;
-    left: 1.5rem;
-}
-
 .thermal-section {
-    background: linear-gradient(
-        225deg,
-        #1623a6 0%,
-        #3343d4 29%,
-        #175eac 73%,
-        #176682 100%
-    );
+    background: linear-gradient(225deg,
+            #1623a6 0%,
+            #3343d4 29%,
+            #175eac 73%,
+            #176682 100%);
     margin: 2rem 0;
     height: 35rem;
     padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.thermal-headings {
-    font-size: 2.5rem;
-    line-height: 0.3em;
-    font-family: "sf-display-bold";
-    color: #fff9;
-}
-
-.thermal-headings .heading-white {
-    color: white;
-}
-
-.thermal-section button {
-    max-width: 15rem;
 }
 
 .thermal-small {
@@ -508,12 +490,30 @@ position at the top of the page (position:fixed and top:0) */
     left: 1.5rem;
 }
 
+.thermal-text {
+    font-size: 2.5rem;
+    line-height: 0.3em;
+    font-family: "sf-display-bold";
+    color: #fff9;
+}
+
+.thermal-text>h3:nth-child(3) {
+    color: white;
+}
+
+.thermal-section button {
+    max-width: 15rem;
+}
+
+
+
 /*=================================================
 media queries
 =================================================*/
 
 /*small devices*/
 @media (min-width: 640px) {
+
     /*header styles*/
     .nav-banner-1 {
         padding: 0 1rem;
@@ -655,7 +655,7 @@ media queries
         position: relative;
         border-radius: 1rem;
     }
-    
+
     .gpu-small {
         position: absolute;
         font-size: 1.5rem;
@@ -1093,6 +1093,7 @@ media queries
 /* extra large devices
 =============================================== */
 @media (min-width: 1280px) {
+
     /*header section styles*/
     nav {
         padding: 0 12rem;
