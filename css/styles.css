@@ -610,7 +610,7 @@ media queries
     /*cpu section styles*/
     .cpu-section {
         border-radius: 1rem;
-        margin: 3rem 5rem;
+        margin: 2rem 5rem;
         display: flex;
         flex-direction: column;
         height: 60rem;
@@ -651,7 +651,7 @@ media queries
     /*gpu sectio styles*/
     .gpu-section {
         padding: 3rem 1.5rem;
-        margin: 3rem 5rem;
+        margin: 2rem 5rem;
         position: relative;
         border-radius: 1rem;
     }
@@ -699,6 +699,19 @@ media queries
         margin: 0;
         font-size: 7rem;
     }
+
+    .battery-section {
+        margin: 3rem 5rem;
+        border-radius: 1rem;
+    }
+
+    .thermal-section {
+        margin: 3rem 5rem;
+        border-radius: 1rem;
+        height: 33rem;
+        position: relative;
+    }
+
 }
 
 /* medium devices
@@ -872,6 +885,40 @@ media queries
         bottom: 1rem;
         left: 1rem;
     }
+
+    .grid-group-1 {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 2rem;
+        margin: 0 5rem 2rem 5rem;
+    }
+
+    .battery-section {
+        margin: 0;
+    }
+
+    .battery-small {
+        font-size: 1.1rem;
+    }
+
+    .battery-section h3 {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+        max-width: 19rem;
+        margin: 3rem auto;
+    }
+
+    .thermal-section {
+        margin: 0;
+        height: auto;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .thermal-text {
+        margin-top: 40%;
+        margin-bottom: auto;
+    }
+
 }
 
 /* large devices
