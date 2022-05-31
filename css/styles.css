@@ -93,6 +93,10 @@ nav ul li a {
     color: #969697;
 }
 
+#active:hover {
+    text-decoration: none;
+}
+
 .nav-icons {
     width: 1rem;
     height: 1rem;
@@ -816,6 +820,10 @@ media queries
         text-decoration: none;
         font-size: 0.688rem;
         padding: 0 0.625rem;
+    }
+
+    .banner-links:hover {
+        text-decoration: underline;
     }
 
     .mobile-menu {
