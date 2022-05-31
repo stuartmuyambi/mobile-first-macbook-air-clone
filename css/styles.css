@@ -646,7 +646,7 @@ media queries
     /*cpu section styles*/
     .cpu-section {
         border-radius: 1rem;
-        margin: 2rem 2rem;
+        margin: 3rem 5rem;
         display: flex;
         flex-direction: column;
         height: 60rem;
@@ -688,7 +688,7 @@ media queries
     /*gpu sectio styles*/
     .gpu-section {
         padding: 3rem 1.5rem;
-        margin: 2rem;
+        margin: 3rem 5rem;
         position: relative;
         border-radius: 1rem;
     }
@@ -845,7 +845,7 @@ media queries
     .cpu-section {
         padding: 2rem 0 4rem 0;
         border-radius: 1rem;
-        margin-top: 0;
+        margin: 2rem;
         position: relative;
         height: 50rem;
         display: grid;
@@ -901,6 +901,7 @@ media queries
         background-position: center;
         height: 28rem;
         position: relative;
+        margin: 2rem;
     }
 
     .gpu-section-left h2 {
@@ -1458,7 +1459,7 @@ media queries
     .ml-text p {
         font-size: 2rem;
         line-height: 2.5rem;
-        max-width: 35rem;
+        max-width: 45rem;
     }
 
     .ml-text small {
@@ -1467,7 +1468,7 @@ media queries
 
     .ml-image img {
         width: 40rem;
-        margin-left: -55rem;
+        margin-left: -45rem;
     }
 }
 
