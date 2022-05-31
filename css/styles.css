@@ -1243,6 +1243,27 @@ media queries
         font-size: 3rem;
         margin-top: 30%;
     }
+
+    .ml-section {
+        height: 40rem;
+    }
+
+    .ml-text p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 35rem;
+    }
+
+    .ml-text small {
+        position: absolute;
+        top: 40px;
+        left: 30px;
+    }
+
+    .ml-image img {
+        width: 35rem;
+        margin-left: -40rem;
+    }
 }
 
 /* extra large devices
