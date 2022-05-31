@@ -444,7 +444,29 @@ position at the top of the page (position:fixed and top:0) */
 .battery-section {
     background: linear-gradient(to bottom, #203025 0%, #151516 100%);
     margin: 2rem 0;
-    height: 35rem;
+    height: auto;
+    padding: 2.5rem 1rem;
+    position: relative;
+}
+
+.battery-section h3 {
+    color: white;
+    text-align: center;
+    padding: 0 1.5rem;
+    font-size: 3rem;
+    line-height: 1.2em;
+    max-width: 20rem;
+    margin: 4rem auto;
+    font-family: "sf-display-bold";
+}
+
+.battery-small {
+    position: absolute;
+    color: #fff;
+    font-family: "sf-display-medium";
+    font-size: 1.2rem;
+    top: 1.5rem;
+    left: 1.5rem;
 }
 
 .thermal-section {
@@ -457,6 +479,13 @@ position at the top of the page (position:fixed and top:0) */
     );
     margin: 2rem 0;
     height: 35rem;
+    padding: 2.5rem 1rem;
+}
+
+.thermal-small {
+    color: #fff;
+    font-family: "sf-display-medium";
+    font-size: 1.2rem;
 }
 
 /*=================================================
@@ -600,19 +629,16 @@ media queries
     }
 
     /*gpu sectio styles*/
-    .gpu-small {
-        font-size: 1.5rem;
-    }
-
     .gpu-section {
         padding: 3rem 1.5rem;
         margin: 3rem 5rem;
         position: relative;
         border-radius: 1rem;
     }
-
+    
     .gpu-small {
         position: absolute;
+        font-size: 1.5rem;
         top: 20px;
         left: 25px;
     }
