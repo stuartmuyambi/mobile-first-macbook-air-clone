@@ -479,13 +479,33 @@ position at the top of the page (position:fixed and top:0) */
     );
     margin: 2rem 0;
     height: 35rem;
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.thermal-headings {
+    font-size: 2.5rem;
+    line-height: 0.3em;
+    font-family: "sf-display-bold";
+    color: #fff9;
+}
+
+.thermal-headings .heading-white {
+    color: white;
+}
+
+.thermal-section button {
+    max-width: 15rem;
 }
 
 .thermal-small {
     color: #fff;
     font-family: "sf-display-medium";
     font-size: 1.2rem;
+    top: 1.5rem;
+    left: 1.5rem;
 }
 
 /*=================================================
