@@ -1450,6 +1450,25 @@ media queries
         font-size: 3.5rem;
         margin-top: 20%;
     }
+
+    .ml-section {
+        height: 45rem;
+    }
+
+    .ml-text p {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        max-width: 35rem;
+    }
+
+    .ml-text small {
+        font-size: 1.3rem;
+    }
+
+    .ml-image img {
+        width: 40rem;
+        margin-left: -55rem;
+    }
 }
 
 /* Desktop Computers
