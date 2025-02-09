@@ -212,12 +212,39 @@ position at the top of the page (position:fixed and top:0) */
     font-size: 1.8rem;
     margin: 0.625rem 0;
     font-family: "sf-display-bold";
-    background: radial-gradient(#eff1ff, #000);
-    background-size: 100% 200%;
-    background-position: 50% 100%;
+    --x: 50%;
+    --y: 50%;
+    background: radial-gradient(circle at var(--x) var(--y), 
+        #eff1ff 0%,
+        #eff1ff 10%,
+        #eff1ff 20%,
+        #666 85%,
+        #444 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: default;
+    user-select: none;
+    transition: --x 2s ease, --y 2s ease;
+}
+
+.main-header-text h3:hover {
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), 
+        #eff1ff 0%,
+        #eff1ff 10%,
+        #eff1ff 20%,
+        #666 85%,
+        #444 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-header-text h3.gradient-transitioning {
+    transition: background-position 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-header-text p,
@@ -763,29 +790,44 @@ media queries
     }
 
     .battery-section {
-        margin: 3rem 5rem;
-        border-radius: 1rem;
+        margin: 0;
     }
 
     .thermal-section {
-        margin: 3rem 5rem;
-        border-radius: 1rem;
-        height: 33rem;
-        position: relative;
+        margin: 0;
+        height: auto;
+        padding: 1.5rem 1.5rem;
+    }
+
+    .thermal-text {
+        margin-top: 40%;
+        margin-bottom: auto;
     }
 
     .ml-section {
-        margin: 3rem 5rem;
-        border-radius: 1rem;
-        height: 45rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        margin: 3rem 2rem;
+        height: 35rem;
+        position: relative;
+        padding: 3rem 0;
     }
 
     .ml-text p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        max-width: 30rem;
+    }
+
+    .ml-text small {
+        position: absolute;
+        top: 40px;
+        left: 30px;
     }
 
     .ml-image img {
         width: 30rem;
+        margin-left: -12rem;
     }
 }
 
