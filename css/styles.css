@@ -544,6 +544,31 @@ position at the top of the page (position:fixed and top:0) */
     margin-right: auto;
 }
 
+/* Animation classes */
+.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease;
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s ease;
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
 /*=================================================
 media queries
 =================================================*/
