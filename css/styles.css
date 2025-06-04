@@ -67,7 +67,9 @@ nav {
     padding: 0 1rem;
     height: 3rem;
     color: #cbcbcb;
-    background-color: #000000eb;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 nav ul {
@@ -118,13 +120,16 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #141416f9;
-    border-bottom: 1px solid #3c3c3c;
+    background-color: rgba(20, 20, 22, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(60, 60, 60, 0.5);
 }
 
 .nav-banner-2 {
     padding: 0.6rem 1.6rem;
-    background-color: #141416;
+    background-color: rgba(20, 20, 22, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(60, 60, 60, 0.5);
 }
 
 .nav-banner-1 p {
@@ -174,6 +179,10 @@ nav ul li a {
     top: 0;
     width: 100%;
     z-index: 200;
+    /* Ensure sticky nav maintains glassmorphism */
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new
@@ -198,7 +207,14 @@ position at the top of the page (position:fixed and top:0) */
 
 .main-header-text {
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 1rem; /* Restored original base padding */
+    background-color: rgba(50, 50, 50, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    /* padding: 20px; /* Removed uniform padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Add some margin to separate from content below */
 }
 
 .main-header-text h2 {
@@ -251,9 +267,14 @@ position at the top of the page (position:fixed and top:0) */
 .m1-section p {
     text-align: center;
     font-family: "sf-display-medium";
-    color: #a1a1a6;
+    color: #a1a1a6; /* Default color */
     font-size: 1.2rem;
     line-height: 1.9rem;
+}
+
+/* Specific adjustment for p within .main-header-text for better contrast */
+.main-header-text p {
+    color: #e0e0e0;
 }
 
 .m1-section p {
@@ -272,8 +293,15 @@ position at the top of the page (position:fixed and top:0) */
 
 .m1-section {
     margin-top: 6rem;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem; /* Restored original base padding */
     position: relative;
+    background-color: rgba(40, 40, 40, 0.7);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    /* padding: 20px; /* Removed uniform padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Add some margin to separate from content below */
 }
 
 .m1-icon {
@@ -282,7 +310,7 @@ position at the top of the page (position:fixed and top:0) */
 
 .m1-section h2 {
     font-size: 1.75rem;
-    color: #9b9b9b;
+    color: #d0d0d0; /* Adjusted for better contrast */
     font-family: "sf-bold";
     margin-bottom: 0.625rem;
 }
@@ -329,10 +357,13 @@ position at the top of the page (position:fixed and top:0) */
 .cpu-section {
     background: linear-gradient(
         to right top,
-        #194189 0%,
-        #3b4980 25%,
-        #8738a7 100%
+        rgba(25, 65, 137, 0.6) 0%,
+        rgba(59, 73, 128, 0.6) 25%,
+        rgba(135, 56, 167, 0.6) 100%
     );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
     margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -402,6 +433,10 @@ position at the top of the page (position:fixed and top:0) */
     background: url("../images/backgrounds/game-gpu-section.jpg");
     background-size: cover;
     background-position: center;
+    background-color: rgba(30, 30, 50, 0.5); /* Overlay color */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
     height: auto;
     margin-top: 2rem;
     padding: 2.5rem 1rem;
@@ -473,7 +508,10 @@ position at the top of the page (position:fixed and top:0) */
 
 /* grid section one  */
 .battery-section {
-    background: linear-gradient(to bottom, #203025 0%, #151516 100%);
+    background: linear-gradient(to bottom, rgba(32, 48, 37, 0.6) 0%, rgba(21, 21, 22, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
     margin: 2rem 0;
     height: auto;
     padding: 2.5rem 1rem;
@@ -503,11 +541,14 @@ position at the top of the page (position:fixed and top:0) */
 .thermal-section {
     background: linear-gradient(
         225deg,
-        #1623a6 0%,
-        #3343d4 29%,
-        #175eac 73%,
-        #176682 100%
+        rgba(22, 35, 166, 0.6) 0%,
+        rgba(51, 67, 212, 0.6) 29%,
+        rgba(23, 94, 172, 0.6) 73%,
+        rgba(23, 102, 130, 0.6) 100%
     );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
     margin: 2rem 0;
     height: 35rem;
     padding: 2.5rem 2rem;
@@ -526,7 +567,7 @@ position at the top of the page (position:fixed and top:0) */
     font-size: 2.5rem;
     line-height: 0.3em;
     font-family: "sf-display-bold";
-    color: #fff9;
+    color: #f0f0f0; /* Adjusted for better legibility */
 }
 
 .thermal-text > h3:nth-child(3) {
@@ -538,7 +579,10 @@ position at the top of the page (position:fixed and top:0) */
 }
 
 .ml-section {
-    background: linear-gradient(to bottom, #061420 0%, #151516 100%);
+    background: linear-gradient(to bottom, rgba(6, 20, 32, 0.6) 0%, rgba(21, 21, 22, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
     height: 40rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -618,7 +662,7 @@ media queries
     }
 
     .main-header-text {
-        padding: 0 2rem;
+        padding: 0 2rem; /* Restored original responsive padding */
     }
 
     .main-header-text h2 {
@@ -665,7 +709,7 @@ media queries
     }
 
     .m1-section {
-        margin: 6rem 4rem;
+        margin: 6rem 4rem 2rem 4rem; /* Adjusted margin to include bottom */
     }
 
     .m1-section h2 {
@@ -683,7 +727,7 @@ media queries
     }
 
     .m1-section {
-        padding: 0;
+        /* padding: 0; /* Removed to inherit base padding of 0 1.5rem */
     }
 
     .m1-image {
@@ -837,7 +881,7 @@ media queries
     /*header section styles*/
 
     .main-header-text {
-        padding: 0 3rem;
+        padding: 0 3rem; /* Restored original responsive padding */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -888,7 +932,7 @@ media queries
     }
 
     .m1-section {
-        margin: 7rem 6rem 0 4rem;
+        margin: 7rem 6rem 2rem 4rem; /* Adjusted margin to include bottom */
     }
 
     .m1-section h2 {
@@ -1131,8 +1175,8 @@ media queries
     }
 
     .main-header-text {
-        margin: auto 9rem;
-        padding: 0;
+        margin: auto 9rem 2rem 9rem; /* Adjusted margin to include bottom */
+        padding: 20px; /* Maintain larger padding for larger screens, consistent with previous step */
     }
 
     .main-header-text p,
@@ -1164,7 +1208,8 @@ media queries
     }
 
     .m1-section {
-        margin: 8rem 10rem 0 9rem;
+        margin: 8rem 10rem 2rem 9rem; /* Adjusted margin to include bottom */
+        padding: 20px; /* Maintain larger padding for larger screens, consistent with previous step */
     }
 
     .m1-section h2 {
@@ -1353,7 +1398,7 @@ media queries
     }
 
     .main-header-text {
-        margin: auto 12rem;
+        margin: auto 12rem 2rem 12rem; /* Adjusted margin to include bottom */
     }
 
     .main-header-text p,
@@ -1386,7 +1431,7 @@ media queries
     }
 
     .m1-section {
-        margin: 8rem 20rem 0 12rem;
+        margin: 8rem 20rem 2rem 12rem; /* Adjusted margin to include bottom */
     }
 
     .m1-section h2 {
@@ -1552,7 +1597,7 @@ media queries
     }
 
     .main-header-text {
-        margin: auto 15rem;
+        margin: auto 15rem 2rem 15rem; /* Adjusted margin to include bottom */
     }
 
     .main-header-text p,
@@ -1571,7 +1616,7 @@ media queries
     }
 
     .m1-section {
-        margin: 10rem 20rem 0 15rem;
+        margin: 10rem 20rem 2rem 15rem; /* Adjusted margin to include bottom */
     }
 
     .m1-section p {
